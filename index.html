@@ -11,14 +11,40 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation>">
-          <li><a class="site-navigation__button" href="catalog.html">Каталог</a></li>
-          <li><a class="site-navigation__button" href="#">Доставка и оплата</a></li>
-          <li><a class="site-navigation__button" href="#">О Компании</a></li>
+          <li>
+            <a class="site-navigation-select">Каталог</a>
+            <ul class="site-navigation-select__sub-menu">
+              <li><a class="highlight" href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="site-navigation__button" href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a class="site-navigation__button" href="#">О Компании</a>
+          </li>
         </ul>
         <div class="user-navigation">
-          <a href="#" class="user-navigation__button user-navigation__button_search-button"></a>
-          <a href="#" class="user-navigation__button user-navigation__button_login-button">Вход</a>
-          <a href="#" class="user-navigation__button user-navigation__button_cart-button">Пусто</a>
+          <form class="user-navigation-search" action="https://echo.htmlacademy.ru" method="post">
+            <label class="user-navigation__button user-navigation-search__button">
+              <input type="text" placeholder="Что ищем?">
+            </label>
+          </form>
+          <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
+            <label class="user-navigation__button user-navigation-login__button" for="user-navigation-login__email-input">Вход</label>
+            <input type="email" class="user-navigation-login__email-input" id="user-navigation-login__email-input" placeholder="Электронная почта">
+            <input type="password" class="user-navigation-login__password-input" id="user-navigation-user-navigation-login__password-input" placeholder="Пароль">
+            <button class="user-navigation-login__button" type="submit"></button>
+            <div>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </form>
+          <a href="#" class="user-navigation__button user-navigation-button_cart__button">Пусто</a>
         </div>
       </nav>
       <div class="main-header__contacts">
@@ -96,7 +122,7 @@
         <h2 class="blog-news__heading">Новое в нашем блоге</h2>
         <a class="blog-news__topic" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
-      <form class="subscribe-block" action="#">
+      <form class="subscribe-block" action="https://echo.htmlacademy.ru" method="post">
         <label class="subscribe-block__text" for="subscribe-block__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
         <input type="email" placeholder="Электронная почта" id="subscribe-block__text">
         <button class="subscribe-block__button" type="submit"></button>
@@ -110,10 +136,37 @@
         <a class="map-block__feedback-button" href="#"></a>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li></li>
+    <footer class="main-footer">
+      <ul class="main-footer-social">
+        <li><a class="main-footer-social__button_tw" href="#"></a></li>
+        <li><a class="main-footer-social__button_in" href="#"></a></li>
+        <li><a class="main-footer-social__button_fb" href="#"></a></li>
+        <li><a class="main-footer-social__button_vk" href="#"></a></li>
       </ul>
+      <table class="main-footer-menu">
+        <tr>
+          <td class="main-footer-menu__item_bold_heart"><a href="#">Для поставщиков</a></td>
+          <td class="main-footer-menu__item"><a href="#">Наши документы</a></td>
+        </tr>
+        <tr>
+          <td class="main-footer-menu__item"><a href="#">О производстве</a></td>
+          <td class="main-footer-menu__item"><a href="#">Экологические стандарты</a></td>
+        </tr>
+      </table>
+      <div class="main-footer-copyright">
+        <img src="img/logo-htmlacademy.svg" alt="html academy">
+        <p class="main-footer-copyright__text">Сделано в HTML Academy © 2017</p>
+      </div>
     </footer>
+    <div class="popup-feedback">
+      <p>Мы обязательно вам ответим!</p>
+      <button class="popup-feedback__close" type="button"></button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" placeholder="Как вас зовут?">
+        <input type="email" placeholder="Ваша почта для ответа?">
+        <textarea placeholder="Напишите что-нибудь..."></textarea>
+        <button class="popup-feedback__send-button" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
