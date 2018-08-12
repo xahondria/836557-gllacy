@@ -14,7 +14,7 @@
           <li>
             <a class="site-navigation-select">Каталог</a>
             <ul class="site-navigation-select__sub-menu">
-              <li><a class="highlight" href="#">Новинки</a></li>
+              <li><a class="site-navigation-select__highlight" href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -30,16 +30,16 @@
         </ul>
         <div class="user-navigation">
           <form class="user-navigation-search" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation__button user-navigation-search__button">
+            <label class="user-navigation-search__label">
               <input type="text" placeholder="Что ищем?">
             </label>
           </form>
           <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation__button user-navigation-login__button" for="user-navigation-login__email-input">Вход</label>
+            <label class="user-navigation-search__label" for="user-navigation-login__email-input">Вход</label>
             <input type="email" class="user-navigation-login__email-input" id="user-navigation-login__email-input" placeholder="Электронная почта">
             <input type="password" class="user-navigation-login__password-input" id="user-navigation-user-navigation-login__password-input" placeholder="Пароль">
             <button class="user-navigation-login__button" type="submit"></button>
-            <div>
+            <div class="user-navigation-login__registration-buttons">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </div>
@@ -48,33 +48,33 @@
         </div>
       </nav>
       <div class="main-header__contacts">
-        <p class="main-header__contacts_schedule">С 10 до 20, ежедневно</p>
-        <p class="main-header__contacts_phone">8 812 450-25-25</p>
+        <p class="main-header__contacts-schedule">С 10 до 20, ежедневно</p>
+        <p class="main-header__contacts-phone">8 812 450-25-25</p>
       </div>
     </header>
     <main class="container">
       <section class="slider">
-        <div class="slide-1">
+        <div class="slide">
           <p class="slide__title">Крем-брюле и пломбир с малиновым джемом</p>
           <a class="slide__button" href="#">Давайте оба!</a>
         </div>
-        <div class="slide-2">
+        <div class="slide">
           <p class="slide__title">Шоколадный пломбир и лимонный сорбет</p>
           <a class="slide__button" href="#">Давайте оба!</a>
         </div>
-        <div class="slide-3">
+        <div class="slide">
           <p class="slide__title">Пломбир с помадкой и клубничный щербет</p>
           <a class="slide__button" href="#">Давайте оба!</a>
         </div>
         <div class="slider-switch"></div>
       </section>
       <section class="promo">
-        <div class="promo-raspberry">
+        <div class="promo__item promo__item_raspberry">
           <p class="promo__title">Малинка даром!</p>
           <p class="promo__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="promo__button" href="#">Хочу варенье!</a>
         </div>
-        <div class="promo-chocolate">
+        <div class="promo__item promo__item_chocolate">
           <p class="promo__title">Шоколадки даром!</p>
           <p class="promo__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="promo__button" href="#">Хочу шоколадки!</a>
@@ -82,22 +82,22 @@
       </section>
       <section class="popular-items">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <div class="popular-item-1"><span>
+        <div class="popular-items__item">
           <img src="img/ice_cream-citrus.jpg" alt="ice_cream-citrus.jpg">
           <p class="popular-items__price">310&#x20bd;<span class="popular-items__price_small">/кг</span></p>
           <h3 class="popular-items__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
         </div>
-        <div class="popular-item-2"><span>
+        <div class="popular-items__item"><span>
           <img src="img/ice_cream-chocolate.jpg" alt="ice_cream-chocolate.jpg">
           <p class="popular-items__price">380&#x20bd;<span class="popular-items__price_small">/кг</span></p>
           <h3 class="popular-items__title">Сливочно-кофейное с кусочками шоколада</h3>
         </div>
-        <div class="popular-item-3"><span>
+        <div class="popular-items__item"><span>
           <img src="img/ice_cream-strawberry.jpg" alt="ice_cream-strawberry.jpg">
           <p class="popular-items__price">355&#x20bd;<span class="popular-items__price_small">/кг</span></p>
           <h3 class="popular-items__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
         </div>
-        <div class="popular-item-4"><span>
+        <div class="popular-items__item"><span>
           <img src="img/ice_cream-creme_brulee.jpg" alt="ice_cream-creme_brulee.jpg">
           <p class="popular-items__price">415&#x20bd;<span class="popular-items__price_small">/кг</span></p>
           <h3 class="popular-items__title">Сливочное крем-брюле с карамельной подливкой</h3>
@@ -105,18 +105,20 @@
       </section>
       <section class="our-advantages">
         <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-        <div class="our-advantages__text our-advantages__text_ice-cream">
-          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-        </div>
-        <div class="our-advantages__text our-advantages__text_leaf">
-          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-        </div>
-        <div class="our-advantages__text our-advantages__text_cow">
-          Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-        </div>
-        <div class="our-advantages__text our-advantages__text_thermometer">
-          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-        </div>
+        <ul class="our-advantages-items">
+          <li class="our-advantages__item our-advantages__item_ice-cream">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          </li>
+          <li class="our-advantages__item our-advantages__item_leaf">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </li>
+          <li class="our-advantages__item our-advantages__item_cow">
+            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          </li>
+          <li class="our-advantages__item our-advantages__item_thermometer">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+          </li>
+        </ul>
       </section>
       <section class="blog-news">
         <h2 class="blog-news__heading">Новое в нашем блоге</h2>
@@ -128,12 +130,14 @@
         <button class="subscribe-block__button" type="submit"></button>
       </form>
       <section class="map-block">
-        <p class="map-block__adress_thin">Адрес главного офиса <br /> и офлайн-магазина:</p>
-        <p class="map-block__adress_thick">ул. Большая Конюшенная <br /> 19/8, Санкт-Петербург</p>
-        <p class="map-block__adress_thin">Для заказов по телефону:</p>
-        <p class="map-block__adress_thick">8 812 450-25-25</p>
-        <p class="map-block__adress_thin">(с 10 до 20 ежедневно)</p>
-        <a class="map-block__feedback-button" href="#"></a>
+      </section>
+      <section class="feedback-block">
+        <p class="feedback-block__adress_thin">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="feedback-block__adress_thick">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <p class="feedback-block__adress_thin">Для заказов по телефону:</p>
+        <p class="feedback-block__adress_thick">8 812 450-25-25</p>
+        <p class="feedback-block__adress_thin">(с 10 до 20 ежедневно)</p>
+        <a class="feedback-block__button" href="#"></a>
       </section>
     </main>
     <footer class="main-footer">
@@ -145,7 +149,7 @@
       </ul>
       <table class="main-footer-menu">
         <tr>
-          <td class="main-footer-menu__item_bold_heart"><a href="#">Для поставщиков</a></td>
+          <td class="main-footer-menu__item main-footer-menu__item_bold_heart"><a href="#">Для поставщиков</a></td>
           <td class="main-footer-menu__item"><a href="#">Наши документы</a></td>
         </tr>
         <tr>
@@ -154,8 +158,10 @@
         </tr>
       </table>
       <div class="main-footer-copyright">
-        <img src="img/logo-htmlacademy.svg" alt="html academy">
-        <p class="main-footer-copyright__text">Сделано в HTML Academy © 2017</p>
+        <a href="index.html">
+          <img src="img/logo-htmlacademy.svg" alt="html academy" width="108" height="39">
+          <p class="main-footer-copyright__text">Сделано в HTML Academy © 2017</p>
+        </a>
       </div>
     </footer>
     <div class="popup-feedback">
