@@ -30,15 +30,18 @@
         </ul>
         <div class="user-navigation">
           <form class="user-navigation-search" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation-search__label">
-              <input type="text" placeholder="Что ищем?">
+            <label class="user-navigation-search__label" aria-label="Что ищем?">
+              <input type="text" placeholder="Что ищем?" name="search">
             </label>
           </form>
           <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation-login__label" for="user-navigation-login__email-input">Вход</label>
-            <input type="email" class="user-navigation-login__email-input" id="user-navigation-login__email-input" placeholder="Электронная почта">
-            <input type="password" class="user-navigation-login__password-input" id="user-navigation-user-navigation-login__password-input" placeholder="Пароль">
-            <button class="user-navigation-login__button" type="submit"></button>
+            <label class="user-navigation-login__label" aria-label="Электронная почта">Вход
+              <input type="email" class="user-navigation-login__email-input" placeholder="Электронная почта" name="email">
+            </label>
+            <label aria-label="Пароль">
+              <input type="password" class="user-navigation-login__password-input" placeholder="Пароль" name="password">
+            </label>
+            <button class="user-navigation-login__button" type="submit">Войти</button>
             <div class="user-navigation-login__registration-buttons">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
@@ -127,9 +130,11 @@
         <a class="blog-news__topic" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <form class="subscribe-block" action="https://echo.htmlacademy.ru" method="post">
-        <label class="subscribe-block__text" for="subscribe-block__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
-        <input type="email" placeholder="Электронная почта" id="subscribe-block__text">
-        <button class="subscribe-block__button" type="submit"></button>
+        <p class="subscribe-block__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <label aria-label="Электронная почта">
+          <input type="email" placeholder="Электронная почта" name="email">
+        </label>
+        <button class="subscribe-block__button" type="submit">Отправить</button>
       </form>
       <section class="map-block">
       </section>
@@ -139,15 +144,15 @@
         <h2 class="feedback-block__phone-heading">Для заказов по телефону:</h2>
         <strong class="feedback-block__phone">8 812 450-25-25</strong>
         <p class="feedback-block__schedule">(с 10 до 20 ежедневно)</p>
-        <a class="feedback-block__button" href="#"></a>
+        <a class="feedback-block__button" href="#">Форма обратной связи</a>
       </section>
     </main>
     <footer class="main-footer">
       <ul class="main-footer-social">
-        <li><a class="main-footer-social__button_tw" href="#"></a></li>
-        <li><a class="main-footer-social__button_in" href="#"></a></li>
-        <li><a class="main-footer-social__button_fb" href="#"></a></li>
-        <li><a class="main-footer-social__button_vk" href="#"></a></li>
+        <li><a class="main-footer-social__button_tw" href="#">Твиттер</a></li>
+        <li><a class="main-footer-social__button_in" href="#">Инстаграм</a></li>
+        <li><a class="main-footer-social__button_fb" href="#">Фейсбук</a></li>
+        <li><a class="main-footer-social__button_vk" href="#">Вконтакте</a></li>
       </ul>
       <ul class="main-footer-menu">
         <li class="main-footer-menu__item main-footer-menu__item_bold_heart"><a href="#">Для поставщиков</a></li>
@@ -164,11 +169,17 @@
     </footer>
     <div class="popup-feedback">
       <p>Мы обязательно вам ответим!</p>
-      <button class="popup-feedback__close" type="button"></button>
+      <button class="popup-feedback__close" type="button" aria-label="Закрыть форму обратной связи"></button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="text" placeholder="Как вас зовут?">
-        <input type="email" placeholder="Ваша почта для ответа?">
-        <textarea placeholder="Напишите что-нибудь..."></textarea>
+        <label aria-label="Как вас зовут?">
+          <input type="text" placeholder="Как вас зовут?" name="name">
+        </label>
+        <label aria-label="Ваша почта для ответа?">
+          <input type="email" placeholder="Ваша почта для ответа?" name="email">
+        </label>
+        <label aria-label="Напишите что-нибудь...">
+          <textarea placeholder="Напишите что-нибудь..." name="feedback-text"></textarea>
+        </label>
         <button class="popup-feedback__send-button" type="submit">Отправить</button>
       </form>
     </div>
