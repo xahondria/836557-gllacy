@@ -1,0 +1,73 @@
+/*стилизация index.html*/
+
+.body-main {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Calibri", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #323232;
+  text-transform: none;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation__button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: solid 1px #a0b5a9;
+}
+
+.site-navigation__button:hover {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #323232;
+  border-bottom: none;
+}
+
+.sub-menu {
+  list-style: none;
+
+}
+
+.sub-menu__item {
+  width: 143px;
+  line-height: 34px;
+  background-color: #f8f7f4;
+}
+
+.sub-menu__item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.sub-menu__item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sub-menu__button {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
+
+  vertical-align: center;
+}
+
+.sub-menu__button_bold {
+  font-weight: bold;
+}
