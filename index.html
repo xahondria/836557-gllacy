@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -32,16 +32,17 @@
           </li>
         </ul>
         <div class="user-navigation">
-          <div class="search-wrapper">
+          <div class="search-wrapper user-navigation__item">
             <form class="search hidden" action="https://echo.htmlacademy.ru" method="post">
               <label aria-label="Что ищем?">
                 <input class="input search__input" type="text" placeholder="Что ищем?" name="search">
               </label>
             </form>
           </div>
-          <div class="login-wrapper">
-            <form class="login" action="https://echo.htmlacademy.ru" method="post">
-              <label class="login__label" aria-label="Электронная почта">Вход
+          <div class="login-wrapper user-navigation__item">
+            Вход
+            <form class="login hidden" action="https://echo.htmlacademy.ru" method="post">
+              <label class="login__label" aria-label="Электронная почта">
                 <input class="input login__input" type="email"  placeholder="Электронная почта" name="email">
               </label>
               <label aria-label="Пароль">
@@ -54,7 +55,7 @@
               </div>
             </form>
           </div>
-          <a href="#" class="user-navigation__button user-navigation-button_cart__button">Пусто</a>
+          <a class="user-navigation__button user-navigation-button_cart__button user-navigation__item" href="#">Пусто</a>
         </div>
       </nav>
       <div class="main-header__contacts">
