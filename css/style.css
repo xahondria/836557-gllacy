@@ -16,6 +16,10 @@
 
 a {
   text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 /*универсальные классы*/
@@ -34,7 +38,6 @@ a {
 
 .input {
   box-sizing: border-box;
-  width: 300px;
   line-height: 24px;
   padding: 9px 14px;
 
@@ -51,22 +54,34 @@ a {
 }
 
 .button {
-  background-color: #f26843;
+  display: inline-block;
 
-  color: #fefefe;
+  background-image: linear-gradient(#f26843, #e74b36);
+  box-shadow: 0 1px 2px 0 #bf4a3d;
+
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
   text-align: center;
   text-decoration: none;
+  text-shadow: 0 1px 3px #c63b23;
+  line-height: 24px;
 
   padding: 10px 25px;
 
   border: none;
   border-radius: 22px;
+}
 
-  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2);
+.button:hover {
+  background-image: linear-gradient(#f58669, #ec6f5e);
+  box-shadow: 0 1px 2px 0 #ac1000;
+}
 
+.button:active {
+  background-image: linear-gradient(#e74b36, #f26843);
+  box-shadow: inset 0 1px 2px 0 #952718;
+  color: #fceeec;
 }
 
 /*header*/
@@ -101,7 +116,6 @@ a {
 .site-navigation__button {
   position: relative;
 
-
   display: block;
 
   font-size: 16px;
@@ -126,7 +140,7 @@ a {
   left: 14px;
   right: 14px;
 
-  background-color: #a5baae;
+  background-color: rgba(255, 255, 255, 0.3);
 
   height: 1px;
   }
@@ -238,7 +252,6 @@ a {
   background-color: #f8f7f4;
 
   box-sizing: border-box;
-  width: 341px;
   padding: 20px 15px;
 
   border-radius: 5px;
@@ -271,9 +284,19 @@ a {
   text-align: right;
   vertical-align: middle;
 
-  background-image: url("../img/decorative/entrance-white.svg");
   background-size: 20px 19px;
   background-position: 16px 50%;
+  background-image: url("../img/decorative/entrance-white.svg");
+}
+
+.login-wrapper:hover {
+  color: #323232;
+  background-image: url("../img/decorative/entrance.svg");
+  background-color: #f8f7f4;
+}
+
+.login-wrapper:hover .login {
+  display: block;
 }
 
 .login {
@@ -282,8 +305,7 @@ a {
   left: 0;
 
   box-sizing: border-box;
-  width: 277px;
-  padding: 20px 18px;
+  padding: 20px 19px;
 
   background-color: #f8f7f4;
 
@@ -295,12 +317,26 @@ a {
   margin-bottom: 20px;
 }
 
-.login-wrapper:hover {
+.login__registration {
+  position: relative;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
   color: #323232;
-  background-color: #f8f7f4;
-  background-image: url("../img/decorative/entrance.svg");
 }
 
-.login-wrapper:hover .login {
+.login__registration::after {
+  content: "";
+
   display: block;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(50, 50, 50, 0.3);
+
+  height: 1px;
 }
