@@ -32,24 +32,28 @@
           </li>
         </ul>
         <div class="user-navigation">
-          <form class="user-navigation-search" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation-search__label" aria-label="Что ищем?">
-              <input type="text" placeholder="Что ищем?" name="search">
-            </label>
-          </form>
-          <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation-login__label" aria-label="Электронная почта">Вход
-              <input type="email" class="user-navigation-login__email-input" placeholder="Электронная почта" name="email">
-            </label>
-            <label aria-label="Пароль">
-              <input type="password" class="user-navigation-login__password-input" placeholder="Пароль" name="password">
-            </label>
-            <button class="user-navigation-login__button" type="submit">Войти</button>
-            <div class="user-navigation-login__registration-buttons">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </div>
-          </form>
+          <div class="search-wrapper">
+            <form class="search hidden" action="https://echo.htmlacademy.ru" method="post">
+              <label aria-label="Что ищем?">
+                <input class="input search__input" type="text" placeholder="Что ищем?" name="search">
+              </label>
+            </form>
+          </div>
+          <div class="login-wrapper">
+            <form class="login" action="https://echo.htmlacademy.ru" method="post">
+              <label class="login__label" aria-label="Электронная почта">Вход
+                <input class="input login__input" type="email"  placeholder="Электронная почта" name="email">
+              </label>
+              <label aria-label="Пароль">
+                <input class="input login__input" type="password" placeholder="Пароль" name="password">
+              </label>
+              <button class="user-navigation-login__button" type="submit">Войти</button>
+              <div class="user-navigation-login__registration-buttons">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
           <a href="#" class="user-navigation__button user-navigation-button_cart__button">Пусто</a>
         </div>
       </nav>
@@ -143,7 +147,7 @@
       <form class="subscribe-block" action="https://echo.htmlacademy.ru" method="post">
         <p class="subscribe-block__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <label aria-label="Электронная почта">
-          <input type="email" placeholder="Электронная почта" name="email">
+          <input class="input" type="email" placeholder="Электронная почта" name="email">
         </label>
         <button class="subscribe-block__button" type="submit">Отправить</button>
       </form>
@@ -183,10 +187,10 @@
       <button class="popup-feedback__close" type="button" aria-label="Закрыть форму обратной связи"></button>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label aria-label="Как вас зовут?">
-          <input type="text" placeholder="Как вас зовут?" name="name">
+          <input class="input" type="text" placeholder="Как вас зовут?" name="name">
         </label>
         <label aria-label="Ваша почта для ответа?">
-          <input type="email" placeholder="Ваша почта для ответа?" name="email">
+          <input class="input" type="email" placeholder="Ваша почта для ответа?" name="email">
         </label>
         <label aria-label="Напишите что-нибудь...">
           <textarea placeholder="Напишите что-нибудь..." name="feedback-text"></textarea>
