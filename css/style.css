@@ -8,7 +8,7 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
-  color: #323232;
+  color: #ffffff;
   text-transform: none;
 
   background-color: #849d8f;
@@ -226,8 +226,13 @@ a {
 /*user-navigation*/
 
 .user-navigation__item {
+  display: block;
+
   background-color: #a0b5a9;
   background-repeat: no-repeat;
+
+  vertical-align: middle;
+  line-height: 32px;
 
   height: 32px;
   border-radius: 16px;
@@ -340,3 +345,71 @@ a {
 
   height: 1px;
 }
+
+.cart-wrapper {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+
+  line-height: 16px;
+  text-align: right;
+  vertical-align: middle;
+
+  background-size: 21px 20px;
+  background-position: 16px 50%;
+  background-image: url("../img/decorative/basket.svg");
+}
+
+.cart-wrapper:hover {
+  color: #323232;
+  background-image: url("../img/decorative/basket-red.svg");
+  background-color: #f8f7f4;
+}
+
+.main-header-contacts__schedule {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.main-header-contacts__phone {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+/*main*/
+
+.slide {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.slide__button {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.375;
+
+  box-sizing: border-box;
+  height: 64px;
+
+  border-radius: 32px;
+}
+
+.slider-switch__button {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 21px;
+  height: 21px;
+}
+
+.slider-switch__button:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
