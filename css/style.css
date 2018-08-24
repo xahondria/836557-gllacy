@@ -2,7 +2,7 @@
 
 .body-main {
   margin: 0;
-  padding: 0;
+  padding: 10px 27px 22px 27px;
 
   font-family: "Roboto", "Calibri", sans-serif;
   font-size: 16px;
@@ -85,10 +85,6 @@ a {
 }
 
 /*header*/
-
-.main-header {
-  padding: 0 27px;
-}
 
 /*site-navigation*/
 
@@ -462,3 +458,50 @@ a {
   background-position: top center;
 }
 
+/*promo*/
+.promo {
+  padding: 0;
+  margin: 0;
+}
+
+.promo-item {
+  min-width: 420px;
+  max-width: 560px;
+  min-height: 229px;
+
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 16px 20px;
+
+  background-color: rgba(172, 16, 0, 0.5);
+}
+
+.promo-item__title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 41px;
+  margin: 0;
+}
+
+.promo-item__description {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.promo-item__button {
+  font-size: 18px;
+  text-shadow: none;
+
+}
+
+.promo-item__raspberry {
+  background-image: url("../img/background/promo-raspberry.jpg");
+}
+
+.promo-item__chocolate{
+  background-image: url("../img/background/promo-chocolate.jpg");
+}
