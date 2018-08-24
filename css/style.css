@@ -505,3 +505,65 @@ a {
 .promo-item__chocolate{
   background-image: url("../img/background/promo-chocolate.jpg");
 }
+
+/*popular items*/
+
+.popular-items {
+  display: flex;
+}
+
+.popular-items-item {
+  position: relative;
+
+  background-color: rgba(172, 16, 0, 0.5);
+
+  border-radius: 5px;
+  min-width: 220px;
+  max-width: 293px;
+
+}
+
+.popular-items-item::before {
+  content: "";
+  display: block;
+  width: 61px;
+  height: 61px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/decorative/hit.svg");
+}
+
+.popular-items-item__image {
+  border-radius: 50%;
+}
+
+.popular-items__price {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: left;
+}
+
+.popular-items__price_small {
+  font-size: 30px;
+}
+
+.popular-items__title {
+  text-align: center;
+}
+
+.popular-items__title a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.popular-items__button {
+  font-size: 18px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
