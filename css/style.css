@@ -24,10 +24,6 @@ a {
 
 /*универсальные классы*/
 
-.hidden {
-  display: none;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -71,7 +67,7 @@ a {
 
   box-sizing: border-box;
   height: 44px;
-  padding: 0px 25px;
+  padding: 0 25px;
 
   border: none;
   border-radius: 22px;
@@ -86,6 +82,10 @@ a {
   background-image: linear-gradient(#e74b36, #f26843);
   box-shadow: inset 0 1px 2px 0 #952718;
   color: #fceeec;
+}
+
+.hidden {
+  display: none;
 }
 
 /*header*/
@@ -522,11 +522,7 @@ a {
 .popular-items-item {
   position: relative;
 
-  background-color: rgba(172, 16, 0, 0.5);
-  border: solid 1px aqua;
-
   box-sizing: border-box;
-  border-radius: 5px;
   max-width: 293px;
   min-width: 220px;
   padding-left: 10px;
@@ -534,7 +530,7 @@ a {
   padding-top: 6px;
 }
 
-.popular-items-item::before {
+.popular-items-item::after {
   content: "";
   display: block;
   width: 61px;
@@ -546,6 +542,25 @@ a {
   left: 13px;
 
   background-image: url("../img/decorative/hit.svg");
+}
+
+.popular-items-item:hover::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+  border-radius: 5px;
+
+  background-color: rgba(255, 255, 255, .25);
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
 }
 
 .popular-items-item__image {
@@ -572,6 +587,7 @@ a {
   font-weight: bold;
   line-height: 45px;
   text-align: left;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 .popular-items__weight {
@@ -589,12 +605,19 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.popular-items__button {
+.popular-items-item:hover .popular-items__button {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
   font-size: 18px;
   padding-left: 13px;
   padding-right: 13px;
 
   display: block;
   max-width: 200px;
-  margin: 0 auto 15px auto;
 }
