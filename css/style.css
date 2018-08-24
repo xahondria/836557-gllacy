@@ -384,6 +384,8 @@ a {
 
 /*main*/
 
+/*slider*/
+
 .slide {
   font-size: 60px;
   font-weight: bold;
@@ -402,7 +404,9 @@ a {
 }
 
 .slider-switch__button {
-  border: 1px solid #ffffff;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
   width: 21px;
@@ -411,5 +415,50 @@ a {
 
 .slider-switch__button:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-switch-input-1:checked ~ * .slider-switch__button-1 {
+  background-color: #ffffff;
+}
+
+.slider-switch-input-2:checked ~ * .slider-switch__button-2 {
+  background-color: #ffffff;
+}
+
+.slider-switch-input-3:checked ~ * .slider-switch__button-3 {
+  background-color: #ffffff;
+}
+
+.slider-switch-input-1:checked ~ * .slide-1 {
+  display: block;
+}
+
+.slider-switch-input-2:checked ~ * .slide-2 {
+  display: block;
+}
+
+.slider-switch-input-3:checked ~ * .slide-3 {
+  display: block;
+}
+
+.slider-switch-input-1:checked ~ *.body-main {
+  background-color: #849d8f;
+  background-image: url("../img/background/slide-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.slider-switch-input-2:checked ~ *.body-main {
+  background-color: #8996a6;
+  background-image: url("../img/background/slide-2.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.slider-switch-input-3:checked ~ *.body-main {
+  background-color: #9d8b84;
+  background-image: url("../img/background/slide-3.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
