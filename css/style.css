@@ -2,7 +2,10 @@
 
 .body-main {
   margin: 0;
-  padding: 10px 27px 22px 27px;
+  padding: 10px auto 22px auto;
+
+  box-sizing: border-box;
+  min-width: 900px;
 
   font-family: "Roboto", "Calibri", sans-serif;
   font-size: 16px;
@@ -89,6 +92,11 @@ a {
 }
 
 /*header*/
+
+.main-header {
+  padding-left: 27px;
+  padding-right: 27px;
+}
 
 /*site-navigation*/
 
@@ -387,6 +395,11 @@ a {
 
 /*main*/
 
+.sections-wrapper {
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
 /*slider*/
 
 .slide__title {
@@ -474,7 +487,7 @@ a {
 .promo-item {
   min-width: 420px;
   max-width: 560px;
-  min-height: 229px;
+  height: 229px;
 
   box-sizing: border-box;
   border-radius: 15px;
@@ -686,4 +699,154 @@ a {
 
 .our-advantages-list__item_thermometer::before {
   background-image: url("../img/decorative/thermometer.svg");
+}
+
+/*blog-news*/
+
+.blog-news {
+  min-width: 420px;
+  max-width: 560px;
+  height: 220px;
+
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 25px 20px;
+
+  background-color: white;
+  background-image: url("../img/background/blog-strawberry.jpg");
+  background-repeat: no-repeat;
+  color: #323232;
+}
+
+.blog-news__heading {
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog-news__topic {
+  width: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-news__topic a {
+  padding: 0;
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #323232;
+  background-color: rgba(255, 255, 255, .7);
+  text-decoration: underline;
+}
+
+/*subscribe-block*/
+
+.subscribe-block-wrapper {
+  box-sizing: border-box;
+  min-width: 420px;
+  max-width: 560px;
+  height: 220px;
+
+  border-radius: 15px;
+  padding: 6px 6px;
+
+  background-color: white;
+  background-image: url("../img/background/bg-post.svg");
+  background-repeat: repeat;
+  color: #323232;
+}
+
+.subscribe-block {
+  padding: 30px 20px;
+  margin: 0;
+  height: 148px;
+  border-radius: 9px;
+
+  background-color: #f8f7f4;
+}
+
+.subscribe-block__text {
+  padding: 0;
+  padding-bottom: 40px;
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.subscribe-block__input {
+  width: 366px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.subscribe-block__button {
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 0;
+}
+
+/*map*/
+
+.map-block {
+  position: relative;
+
+  max-width: 1200px;
+  min-width: 900px;
+  height: 430px;
+
+  background-image: url("../img/background/map.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.feedback-block {
+  position: absolute;
+  top: 60px;
+  right: 27px;
+
+  box-sizing: border-box;
+  width: 302px;
+  padding: 30px 25px;
+  border-radius: 13px;
+
+  background-color: #fdfdfd;
+}
+
+.feedback-block__heading {
+  font-size: 16px;
+  font-weight: 400;
+  color: #323232;
+  line-height: 20px;
+  padding: 0;
+}
+
+.feedback-block__adress {
+  font-size: 18px;
+  font-weight: bold;
+  color: #323232;
+  line-height: 24px;
+}
+
+.feedback-block__phone {
+  font-size: 18px;
+  font-weight: bold;
+  color: #323232;
+  line-height: 22px;
+}
+
+.feedback-block__schedule {
+  font-size: 14px;
+  font-weight: 400;
+  color: #323232;
+  line-height: 22px;
 }
