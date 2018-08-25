@@ -621,3 +621,69 @@ a {
   display: block;
   max-width: 200px;
 }
+
+/*our-advantages*/
+
+.our-advantages {
+  color: #323232;
+  background-color: #ebdebf;
+  background-image: url("../img/background/pattern-wafer.jpg");
+
+  border-radius: 13px;
+
+  padding: 25px 21px 0 21px;
+}
+
+.our-advantages__heading {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.our-advantages-list {
+  list-style: none;
+  padding: 0;
+  padding-left: 56px;
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.our-advantages-list__item {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.our-advantages-list__item::before {
+  content: "";
+  position: absolute;
+  left: -57px;
+  top: -13px;
+
+  background-repeat: no-repeat;
+
+  width: 49px;
+  height: 49px;
+}
+
+.our-advantages-list__item_cow::before {
+  background-image: url("../img/decorative/cow.svg");
+}
+
+.our-advantages-list__item_ice-cream::before {
+  background-image: url("../img/decorative/ice-cream.svg");
+}
+
+.our-advantages-list__item_leaf::before {
+  background-image: url("../img/decorative/eco.svg");
+}
+
+.our-advantages-list__item_thermometer::before {
+  background-image: url("../img/decorative/thermometer.svg");
+}
