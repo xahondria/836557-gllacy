@@ -4,7 +4,6 @@
   padding-top: 10px;
   padding-bottom: 22px;
 
-  box-sizing: border-box;
   min-width: 900px;
 
   font-family: "Roboto", "Calibri", sans-serif;
@@ -25,7 +24,19 @@ a {
   color: #ffffff;
 }
 
+*, *::before, ::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 /*универсальные классы*/
+
+.content-box-component {
+  box-sizing: content-box;
+}
 
 .visually-hidden {
   position: absolute;
@@ -36,7 +47,6 @@ a {
 }
 
 .input {
-  box-sizing: border-box;
   line-height: 24px;
   padding: 9px 14px;
 
@@ -68,7 +78,6 @@ a {
 
   line-height: 44px;
 
-  box-sizing: border-box;
   height: 44px;
   padding: 0 25px;
 
@@ -91,12 +100,12 @@ a {
   display: none;
 }
 
-/*header*/
-
-.main-header {
-  padding-left: 27px;
-  padding-right: 27px;
+.section-margin {
+  margin-left: 27px;
+  margin-right: 27px;
 }
+
+/*header*/
 
 /*site-navigation*/
 
@@ -107,6 +116,7 @@ a {
 
 .site-navigation__item {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   border-radius: 16px;
   line-height: 18px;
@@ -129,11 +139,9 @@ a {
   font-size: 16px;
   line-height: 18px;
   padding: 7px 14px;
-  vertical-align: center;
+  vertical-align: middle;
   font-weight: bold;
   color: #ffffff;
-
-  box-sizing: border-box;
 
   border-radius: 16px;
 }
@@ -179,7 +187,6 @@ a {
 
 .sub-menu__button {
   display: block;
-  box-sizing: border-box;
   width: 143px;
   line-height: 16px;
   padding: 9px 20px;
@@ -263,9 +270,7 @@ a {
   left: 0;
   background-color: #f8f7f4;
 
-  box-sizing: border-box;
   padding: 20px 15px;
-
   border-radius: 5px;
 }
 
@@ -279,14 +284,12 @@ a {
 }
 
 .search__input {
-  box-sizing: border-box;
   width: 311px;
 }
 
 .login-wrapper {
   position: relative;
 
-  box-sizing: border-box;
   width: 92px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -317,7 +320,6 @@ a {
   top: 100%;
   left: 0;
 
-  box-sizing: border-box;
   padding: 20px 19px;
 
   background-color: #f8f7f4;
@@ -357,7 +359,6 @@ a {
 .cart-wrapper {
   position: relative;
 
-  box-sizing: border-box;
   width: 100px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -392,11 +393,6 @@ a {
 
 /*main*/
 
-.sections-wrapper {
-  padding-left: 27px;
-  padding-right: 27px;
-}
-
 /*slider*/
 
 .slide__title {
@@ -410,7 +406,6 @@ a {
   font-weight: bold;
   line-height: 64px;
 
-  box-sizing: border-box;
   height: 64px;
 
   border-radius: 32px;
@@ -418,7 +413,6 @@ a {
 
 .slider-switch__button {
   display: inline-block;
-  box-sizing: border-box;
   border: 2px solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
@@ -476,17 +470,11 @@ a {
 }
 
 /*promo*/
-.promo {
-  padding: 0;
-  margin: 0;
-}
-
 .promo-item {
   min-width: 420px;
   max-width: 560px;
   height: 229px;
 
-  box-sizing: border-box;
   border-radius: 15px;
   padding: 16px 20px;
 
@@ -532,7 +520,6 @@ a {
 .popular-items-item {
   position: relative;
 
-  box-sizing: border-box;
   max-width: 293px;
   min-width: 220px;
   padding-left: 10px;
@@ -641,7 +628,7 @@ a {
 
   border-radius: 13px;
 
-  padding: 25px 21px 0 21px;
+  padding: 25px 21px 25px 21px;
 }
 
 .our-advantages__heading {
@@ -667,6 +654,9 @@ a {
 
 .our-advantages-list__item {
   position: relative;
+}
+
+.our-advantages-list__item:not(:last-child) {
   padding-bottom: 25px;
 }
 
@@ -705,7 +695,6 @@ a {
   max-width: 560px;
   height: 220px;
 
-  box-sizing: border-box;
   border-radius: 15px;
   padding: 25px 20px;
 
@@ -746,7 +735,6 @@ a {
 /*subscribe-block*/
 
 .subscribe-block-wrapper {
-  box-sizing: border-box;
   min-width: 420px;
   max-width: 560px;
   height: 220px;
@@ -763,7 +751,7 @@ a {
 .subscribe-block {
   padding: 30px 20px;
   margin: 0;
-  height: 148px;
+  height: 208px;
   border-radius: 9px;
 
   background-color: #f8f7f4;
@@ -811,7 +799,6 @@ a {
   top: 60px;
   right: 27px;
 
-  box-sizing: border-box;
   width: 302px;
   padding: 30px 25px;
   border-radius: 13px;

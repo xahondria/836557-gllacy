@@ -15,7 +15,7 @@
 
     <!--body-->
     <div class="page-wrapper-index">
-      <header class="main-header">
+      <header class="main-header section-margin">
         <a class="main-header__logo">
           <img src="img/decorative/logo.svg" alt="Логотип Глейси" width="154" height="64">
         </a>
@@ -71,91 +71,91 @@
         </div>
       </header>
       <main>
-        <div class="sections-wrapper">
-          <section class="slider">
-            <div class="slide slide-1 hidden">
-              <h2 class="slide__title">Крем-брюле и пломбир с малиновым джемом</h2>
-              <a class="button slide__button" href="#">Давайте оба!</a>
+        <section class="slider section-margin">
+          <div class="slide slide-1 hidden">
+            <h2 class="slide__title">Крем-брюле и пломбир с малиновым джемом</h2>
+            <a class="button slide__button" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide slide-2 hidden">
+            <h2 class="slide__title">Шоколадный пломбир и лимонный сорбет</h2>
+            <a class="button slide__button" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide slide-3 hidden">
+            <h2 class="slide__title">Пломбир с помадкой и клубничный щербет</h2>
+            <a class="button slide__button" href="#">Давайте оба!</a>
+          </div>
+          <div class="slider-switch">
+            <label class="slider-switch__button slider-switch__button-1" for="slide-1" aria-label="первый слайд"></label>
+            <label class="slider-switch__button slider-switch__button-2" for="slide-2" aria-label="второй слайд"></label>
+            <label class="slider-switch__button slider-switch__button-3" for="slide-3" aria-label="третий слайд"></label>
+          </div>
+        </section>
+        <section class="promo section-margin">
+          <div class="promo-item promo-item__raspberry">
+            <h2 class="promo-item__title">Малинка даром!</h2>
+            <p class="promo-item__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button promo-item__button" href="#">Хочу варенье!</a>
+          </div>
+          <div class="promo-item promo-item__chocolate">
+            <h2 class="promo-item__title">Шоколадки даром!</h2>
+            <p class="promo-item__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="button promo-item__button" href="#">Хочу шоколадки!</a>
+          </div>
+        </section>
+        <section class="popular-items section-margin">
+          <h2 class="visually-hidden">Популярные товары</h2>
+          <div class="popular-items-item">
+            <div class="popular-items-item__image">
+              <img src="img/content/ice-cream-citrus.jpg"
+                   alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+              <p class="popular-items__price">310&#x20bd;<span class="popular-items__weight">/кг</span></p>
             </div>
-            <div class="slide slide-2 hidden">
-              <h2 class="slide__title">Шоколадный пломбир и лимонный сорбет</h2>
-              <a class="button slide__button" href="#">Давайте оба!</a>
+            <h3 class="popular-items__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+            <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="popular-items-item">
+            <div class="popular-items-item__image">
+              <img src="img/content/ice-cream-chocolate.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+              <p class="popular-items__price">380&#x20bd;<span class="popular-items__weight">/кг</span></p>
             </div>
-            <div class="slide slide-3 hidden">
-              <h2 class="slide__title">Пломбир с помадкой и клубничный щербет</h2>
-              <a class="button slide__button" href="#">Давайте оба!</a>
+            <h3 class="popular-items__title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+            <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="popular-items-item">
+            <div class="popular-items-item__image">
+              <img src="img/content/ice-cream-strawberry.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+              <p class="popular-items__price">355&#x20bd;<span class="popular-items__weight">/кг</span></p>
             </div>
-            <div class="slider-switch">
-              <label class="slider-switch__button slider-switch__button-1" for="slide-1" aria-label="первый слайд"></label>
-              <label class="slider-switch__button slider-switch__button-2" for="slide-2" aria-label="второй слайд"></label>
-              <label class="slider-switch__button slider-switch__button-3" for="slide-3" aria-label="третий слайд"></label>
+            <h3 class="popular-items__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+            <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="popular-items-item">
+            <div class="popular-items-item__image">
+              <img src="img/content/ice-cream-creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
+              <p class="popular-items__price">415&#x20bd;<span class="popular-items__weight">/кг</span></p>
             </div>
-          </section>
-          <section class="promo">
-            <div class="promo-item promo-item__raspberry">
-              <h2 class="promo-item__title">Малинка даром!</h2>
-              <p class="promo-item__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="button promo-item__button" href="#">Хочу варенье!</a>
-            </div>
-            <div class="promo-item promo-item__chocolate">
-              <h2 class="promo-item__title">Шоколадки даром!</h2>
-              <p class="promo-item__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a class="button promo-item__button" href="#">Хочу шоколадки!</a>
-            </div>
-          </section>
-          <section class="popular-items">
-            <h2 class="visually-hidden">Популярные товары</h2>
-            <div class="popular-items-item">
-              <div class="popular-items-item__image">
-                <img src="img/content/ice-cream-citrus.jpg"
-                     alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-                <p class="popular-items__price">310&#x20bd;<span class="popular-items__weight">/кг</span></p>
-              </div>
-              <h3 class="popular-items__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-              <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
-            </div>
-            <div class="popular-items-item">
-              <div class="popular-items-item__image">
-                <img src="img/content/ice-cream-chocolate.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-                <p class="popular-items__price">380&#x20bd;<span class="popular-items__weight">/кг</span></p>
-              </div>
-              <h3 class="popular-items__title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-              <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
-            </div>
-            <div class="popular-items-item">
-              <div class="popular-items-item__image">
-                <img src="img/content/ice-cream-strawberry.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-                <p class="popular-items__price">355&#x20bd;<span class="popular-items__weight">/кг</span></p>
-              </div>
-              <h3 class="popular-items__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-              <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
-            </div>
-            <div class="popular-items-item">
-              <div class="popular-items-item__image">
-                <img src="img/content/ice-cream-creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
-                <p class="popular-items__price">415&#x20bd;<span class="popular-items__weight">/кг</span></p>
-              </div>
-              <h3 class="popular-items__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-              <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
-            </div>
-          </section>
-          <section class="our-advantages">
-            <h1 class="our-advantages__heading">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-            <ul class="our-advantages-list">
-              <li class="our-advantages-list__item our-advantages-list__item_ice-cream">
-                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-              </li>
-              <li class="our-advantages-list__item our-advantages-list__item_leaf">
-                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-              </li>
-              <li class="our-advantages-list__item our-advantages-list__item_cow">
-                Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-              </li>
-              <li class="our-advantages-list__item our-advantages-list__item_thermometer">
-                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-              </li>
-            </ul>
-          </section>
+            <h3 class="popular-items__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+            <a class="button popular-items__button hidden" href="#">Быстрый просмотр</a>
+          </div>
+        </section>
+        <section class="our-advantages section-margin">
+          <h1 class="our-advantages__heading">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+          <ul class="our-advantages-list">
+            <li class="our-advantages-list__item our-advantages-list__item_ice-cream">
+              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+            </li>
+            <li class="our-advantages-list__item our-advantages-list__item_leaf">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </li>
+            <li class="our-advantages-list__item our-advantages-list__item_cow">
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </li>
+            <li class="our-advantages-list__item our-advantages-list__item_thermometer">
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </li>
+          </ul>
+        </section>
+        <div class="section-wrapper section-margin">
           <section class="blog-news">
             <h2 class="blog-news__heading">Новое в нашем блоге</h2>
             <p class="blog-news__topic">
@@ -183,7 +183,7 @@
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer section-margin">
         <ul class="main-footer-social">
           <li><a class="main-footer-social__button_tw" href="#">Твиттер</a></li>
           <li><a class="main-footer-social__button_in" href="#">Инстаграм</a></li>
