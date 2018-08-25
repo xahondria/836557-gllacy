@@ -1,8 +1,8 @@
 /*стилизация index.html*/
 
-.body-main {
-  margin: 0;
-  padding: 10px auto 22px auto;
+.page-wrapper-index {
+  padding-top: 10px;
+  padding-bottom: 22px;
 
   box-sizing: border-box;
   min-width: 900px;
@@ -200,10 +200,7 @@ a {
 
 .sub-menu__item_underlined {
   position: relative;
-}
-
-.sub-menu__item_underlined+* {
-  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .sub-menu__item_underlined::after {
@@ -433,45 +430,45 @@ a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.slider-switch-input-1:checked ~ * .slider-switch__button-1 {
+.slider-switch-input-1:checked ~ .page-wrapper-index .slider-switch__button-1 {
   background-color: #ffffff;
 }
 
-.slider-switch-input-2:checked ~ * .slider-switch__button-2 {
+.slider-switch-input-2:checked ~ .page-wrapper-index .slider-switch__button-2 {
   background-color: #ffffff;
 }
 
-.slider-switch-input-3:checked ~ * .slider-switch__button-3 {
+.slider-switch-input-3:checked ~ .page-wrapper-index .slider-switch__button-3 {
   background-color: #ffffff;
 }
 
-.slider-switch-input-1:checked ~ * .slide-1 {
+.slider-switch-input-1:checked ~ .page-wrapper-index .slide-1 {
   display: block;
 }
 
-.slider-switch-input-2:checked ~ * .slide-2 {
+.slider-switch-input-2:checked ~ .page-wrapper-index .slide-2 {
   display: block;
 }
 
-.slider-switch-input-3:checked ~ * .slide-3 {
+.slider-switch-input-3:checked ~ .page-wrapper-index .slide-3 {
   display: block;
 }
 
-.slider-switch-input-1:checked ~ .body-main {
+.slider-switch-input-1:checked ~ .page-wrapper-index {
   background-color: #849d8f;
   background-image: url("../img/background/slide-1.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
-.slider-switch-input-2:checked ~ .body-main {
+.slider-switch-input-2:checked ~ .page-wrapper-index {
   background-color: #8996a6;
   background-image: url("../img/background/slide-2.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
-.slider-switch-input-3:checked ~ .body-main {
+.slider-switch-input-3:checked ~ .page-wrapper-index {
   background-color: #9d8b84;
   background-image: url("../img/background/slide-3.png");
   background-repeat: no-repeat;
