@@ -15,8 +15,8 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li class="site-navigation__item sub-menu-container ">
-            <a class="site-navigation__button site-navigation__button_selected" href="catalog.html">Каталог</a>
+          <li class="site-navigation__item site-navigation__item_selected sub-menu-container ">
+            <a class="site-navigation__button" href="catalog.html">Каталог</a>
             <ul class="sub-menu hidden">
               <li class="sub-menu__item sub-menu__item_underlined"><a class="sub-menu__button sub-menu__button_bold" href="#">Новинки</a></li>
               <li class="sub-menu__item"><a class="sub-menu__button" href="catalog.html">Сливочное</a></li>
@@ -25,76 +25,79 @@
               <li class="sub-menu__item"><a class="sub-menu__button" href="#">Мелорин</a></li>
             </ul>
           </li>
-
-          <li>
+          <li class="site-navigation__item">
             <a class="site-navigation__button" href="#">Доставка и оплата</a>
           </li>
-          <li>
+          <li class="site-navigation__item">
             <a class="site-navigation__button" href="#">О Компании</a>
           </li>
         </ul>
         <div class="user-navigation">
-          <form class="user-navigation-search" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation-search__label" aria-label="Что ищем?">
-              <input type="text" placeholder="Что ищем?" name="search">
-            </label>
-          </form>
-          <form class="user-navigation-login" action="https://echo.htmlacademy.ru" method="post">
-            <label class="user-navigation-login__label">Вход
-              <input type="email" class="user-navigation-login__email-input" placeholder="Электронная почта" name="email">
-            </label>
-            <label aria-label="Пароль">
-              <input type="password" class="user-navigation-login__password-input" placeholder="Пароль" name="password">
-            </label>
-            <button class="user-navigation-login__button" type="submit">Войти</button>
-            <div class="user-navigation-login__registration-buttons">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </div>
-          </form>
-          <form class="user-navigation-cart" action="https://echo.htmlacademy.ru" method="post">
-            <a href="#" class="user-navigation-cart__button user-navigation-cart__button" aria-label="корзина">2 товара</a>
-            <table class="user-navigation-cart-table visually-hidden">
-              <tr class="user-navigation-cart-table-item">
-                <td class="user-navigation-cart-table-item__delete">
-                  <button class="user-navigation-cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
+          <div class="search-wrapper user-navigation__item">
+            <form class="search hidden" action="https://echo.htmlacademy.ru" method="post">
+              <label aria-label="Что ищем?">
+                <input class="input search__input" type="text" placeholder="Что ищем?" name="search">
+              </label>
+            </form>
+          </div>
+          <div class="login-wrapper user-navigation__item">
+            Вход
+            <form class="login hidden" action="https://echo.htmlacademy.ru" method="post">
+              <label aria-label="Электронная почта">
+                <input class="input login__input" type="email"  placeholder="Электронная почта" name="email">
+              </label>
+              <label aria-label="Пароль">
+                <input class="input login__input" type="password" placeholder="Пароль" name="password">
+              </label>
+              <button class="button" type="submit">Войти</button>
+              <div class="registration">
+                <a class="login__registration" href="#">Забыли пароль?</a>
+                <a class="login__registration" href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
+          <form class="cart-wrapper" action="https://echo.htmlacademy.ru" method="post">
+            <a href="#" class="cart-label user-navigation__item" aria-label="корзина">2 товара</a>
+            <table class="cart-table">
+              <tr class="cart-table-item">
+                <td class="cart-table-item__delete">
+                  <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
                 </td>
-                <td class="user-navigation-cart-table-item__name user-navigation-cart-table-item__name_ice-cream-citrus">
-                  <a href="#">Пломбир с апельсиновым джемом</a>
+                <td class="cart-table-item__name-column">
+                  <a class="cart-table-item__name cart-table-item__name_ice-cream-citrus" href="#">Пломбир с апельсиновым джемом</a>
                   <input type="hidden" name="cart-item" value="citrus">
                 </td>
-                <td class="user-navigation-cart-table-item__amount">
-                  1,5 кг х
-                  <span class="user-navigation-cart-table-item__amount_#999999">
-                    200 руб.
-                  </span>
+                <td class="cart-table-item__amount">
+                  1,5 кг х<span class="cart-table-item__amount_#999999"> 200 руб.</span>
                 </td>
-                <td class="user-navigation-cart-table-item__price">
+                <td class="cart-table-item__price">
                   300 руб.
                 </td>
               </tr>
-              <tr class="user-navigation-cart-table-item">
-                <td class="user-navigation-cart-table-item__delete">
-                  <button class="user-navigation-cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
+              <tr class="cart-table-item">
+                <td class="cart-table-item__delete">
+                  <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
                 </td>
-                <td class="user-navigation-cart-table-item__name user-navigation-cart-table-item__name_ice-cream-citrus">
-                  <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                <td class="cart-table-item__name-column">
+                  <a class="cart-table-item__name cart-table-item__name_ice-cream-strawberry" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
                   <input type="hidden" name="cart-item" value="strawberry">
                 </td>
-                <td class="user-navigation-cart-table-item__amount">
+                <td class="cart-table-item__amount">
                   1,5 кг х
-                  <span class="user-navigation-cart-table-item__amount_#999999">
+                  <span class="cart-table-item__amount_#999999">
                     300 руб.
                   </span>
                 </td>
-                <td class="user-navigation-cart-table-item__price">
+                <td class="cart-table-item__price">
                   450 руб.
                 </td>
               </tr>
             </table>
-            <p class="user-navigation-cart__total-price">Итого: 750 руб.</p>
-            <button class="user-navigation-cart__button" type="submit">Оформить заказ</button>
+            <p class="cart__total-price">Итого: 750 руб.</p>
+            <button class="cart__button" type="submit">Оформить заказ</button>
           </form>
+
+
         </div>
       </nav>
       <div class="main-header__contacts">
