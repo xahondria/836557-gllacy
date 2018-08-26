@@ -169,6 +169,15 @@ html {
   border-radius: 16px;
 }
 
+
+.site-navigation__button_selected {
+  background-color: #d07058;
+}
+
+.site-navigation__button_selected+.site-navigation__button::after {
+  display: none;
+}
+
 .site-navigation__button::after {
   content: "";
 
