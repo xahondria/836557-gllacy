@@ -179,7 +179,9 @@
             <h2 class="feedback-block__heading">Для заказов по телефону:</h2>
             <strong class="feedback-block__phone">8 812 450-25-25</strong>
             <p class="feedback-block__schedule">(с 10 до 20 ежедневно)</p>
-            <a class="button feedback-block__button" href="#">Форма обратной связи</a>
+            <button class="button feedback-block__button"
+                    type="button"
+                    onclick="document.getElementById('popup-feedback-wrapper').style.display='block'">Форма обратной связи</button>
           </div>
         </section>
       </main>
@@ -204,21 +206,28 @@
         </div>
       </footer>
     </div>
-    <div class="popup-feedback">
-      <p>Мы обязательно вам ответим!</p>
-      <button class="popup-feedback__close" type="button" aria-label="Закрыть форму обратной связи"></button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label aria-label="Как вас зовут?">
-          <input class="input" type="text" placeholder="Как вас зовут?" name="name">
-        </label>
-        <label aria-label="Ваша почта для ответа?">
-          <input class="input" type="email" placeholder="Ваша почта для ответа?" name="email">
-        </label>
-        <label aria-label="Напишите что-нибудь...">
-          <textarea placeholder="Напишите что-нибудь..." name="feedback-text"></textarea>
-        </label>
-        <button class="popup-feedback__send-button" type="submit">Отправить</button>
-      </form>
+    <div class="popup-feedback-wrapper hidden"
+         id="popup-feedback-wrapper"
+         onclick="document.getElementById('popup-feedback-wrapper').style.display='none'">
+      <div class="popup-feedback">
+        <p class="popup-feedback__title">Мы обязательно вам ответим!</p>
+        <button class="popup-feedback__close"
+                type="button"
+                onclick="document.getElementById('popup-feedback-wrapper').style.display='none'"
+                aria-label="Закрыть форму обратной связи"></button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label aria-label="Как вас зовут?">
+            <input class="input popup-feedback__input" type="text" placeholder="Как вас зовут?" name="name">
+          </label>
+          <label aria-label="Ваша почта для ответа?">
+            <input class="input popup-feedback__input" type="email" placeholder="Ваша почта для ответа?" name="email">
+          </label>
+          <label aria-label="Напишите что-нибудь...">
+            <textarea class="textarea popup-feedback__textarea" placeholder="Напишите что-нибудь..." name="feedback-text"></textarea>
+          </label>
+          <button class="button popup-feedback__button" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

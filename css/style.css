@@ -47,6 +47,11 @@ html {
 }
 
 .input {
+  height: 44px;
+}
+
+.input,
+.textarea {
   line-height: 24px;
   padding: 9px 14px;
 
@@ -54,12 +59,28 @@ html {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #323232;
+
+  outline: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
   color: #999999;
 }
 
-.input::placeholder {
-  color: #999999;
+.input:hover,
+.textarea:hover {
+  border: 2px solid #d3d3d2;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 2px solid rgba(46, 136, 228, .52);
 }
 
 .button {
@@ -83,6 +104,8 @@ html {
 
   border: none;
   border-radius: 22px;
+
+  cursor: pointer;
 }
 
 .button:hover {
@@ -838,6 +861,7 @@ html {
   display: block;
 }
 
+
 /*footer*/
 
 .social {
@@ -931,7 +955,7 @@ html {
 }
 
 .footer-menu__button_bold::before {
-  content: "❤";
+  content: "\2764";
   position: absolute;
   left: -19px;
   top: 0;
@@ -955,4 +979,73 @@ html {
 .copyright__text a:hover {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 189, 158, 0.3);
+}
+
+/*popup*/
+
+.popup-feedback-wrapper {
+  font-family: "Roboto", "Calibri", sans-serif;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.popup-feedback {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 477px;
+  height: 442px;
+  margin-left: -237px;
+  margin-top: -221px;
+  background-color: #f8f7f4;
+  border-radius: 9px;
+  padding: 20px 24px 24px;
+}
+
+.popup-feedback__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #323232;
+  margin: 0;
+}
+
+.popup-feedback__close {
+  position: absolute;
+  right: 16px;
+  top: 15px;
+
+  width: 18px;
+  height: 17px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/decorative/cross-big.svg");
+
+  cursor: pointer;
+}
+
+.popup-feedback__input {
+  font-size: 16px;
+  width: 267px;
+  margin-top: 20px;
+}
+
+.popup-feedback__textarea {
+  width: 428px;
+  height: 155px;
+  resize: none;
+  margin-top: 20px;
+}
+
+.popup-feedback__button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
 }
