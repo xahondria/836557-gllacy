@@ -653,7 +653,12 @@ html {
   display: flex;
 }
 
-.popular-items-item {
+.catalog-ice-cream {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-ice-cream-item {
   position: relative;
 
   max-width: 293px;
@@ -663,7 +668,7 @@ html {
   padding-top: 6px;
 }
 
-.popular-items-item::after {
+.catalog-ice-cream-item_hit::after {
   content: "";
   display: block;
   width: 61px;
@@ -677,7 +682,7 @@ html {
   background-image: url("../img/decorative/hit.svg");
 }
 
-.popular-items-item:hover::before {
+.catalog-ice-cream-item:hover::before {
   content: "";
   display: block;
   width: 100%;
@@ -689,7 +694,7 @@ html {
   background-color: rgba(255, 255, 255, .25);
 
   position: absolute;
-  z-index: 0;
+  z-index: 5;
   top: 0;
   left: 0;
   right: 0;
@@ -697,13 +702,18 @@ html {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
 }
 
-.popular-items-item__image {
+.catalog-ice-cream-item:hover .catalog-ice-cream-item__image {
+  z-index: 6;
+}
+
+.catalog-ice-cream-item__image {
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 
-.popular-items-item__image img {
+.catalog-ice-cream-item__image a,
+.catalog-ice-cream-item__image img {
   border-radius: 50%;
   max-width: 100%;
   display: block;
@@ -711,7 +721,7 @@ html {
   margin-right: auto;
 }
 
-.popular-items__price {
+.catalog-ice-cream__price {
   position: absolute;
   bottom: 20px;
 
@@ -724,22 +734,24 @@ html {
   text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
-.popular-items__weight {
+.catalog-ice-cream__weight {
   font-size: 30px;
 }
 
-.popular-items__title {
+.catalog-ice-cream__title {
   text-align: center;
 }
 
-.popular-items__title a {
+.catalog-ice-cream__title a {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 6;
 }
 
-.popular-items-item:hover .popular-items__button {
+.catalog-ice-cream-item:hover .catalog-ice-cream__button {
   position: absolute;
   z-index: 100;
   top: 100%;
