@@ -111,7 +111,7 @@
         <p class="main-header-contacts__phone">8 812 450-25-25</p>
       </div>
     </header>
-    <main class="section-margin">
+    <main class="underlined section-margin">
       <ul class="catalog-path">
         <li class="catalog-path__item"><a class="catalog-path__button" href="index.html">Главная</a></li>
         <li class="catalog-path__item"><a class="catalog-path__button" href="catalog.html">Каталог</a></li>
@@ -125,12 +125,14 @@
                      price_max.value=options_range_slider_price_max.value">
         <fieldset class="options-item">
           <legend class="options-item__legend">Сортировка:</legend>
-          <select class="options-input options-item-sorting__select" name="item-sorting">
-            <option value="по популярности">по популярности</option>
-            <option value="сначала недорогие">сначала недорогие</option>
-            <option value="сначала дорогие">сначала дорогие</option>
-            <option value="по жирности">по жирности</option>
-          </select>
+          <label aria-label="cортировка">
+            <select class="options-input options-item-sorting__select" name="item-sorting">
+              <option value="по популярности">по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </select>
+          </label>
         </fieldset>
         <fieldset class="options-item">
           <legend class="options-item__legend">Цена:
@@ -286,32 +288,34 @@
           <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
         </div>
       </section>
-      <ul class="catalog-navigation">
-        <li><a href="#" aria-label="страница">1</a></li>
-        <li><a href="#" aria-label="страница">2</a></li>
-        <li><a href="#" aria-label="страница">3</a></li>
-        <li><a href="#" aria-label="страница">4</a></li>
-        <li><a href="#" aria-label="страница">5</a></li>
+      <ul class="catalog-pagination">
+        <li class="catalog-pagination__number catalog-pagination__arrow catalog-pagination__arrow_disabled"><a aria-label="страница">‹</a></li>
+        <li class="catalog-pagination__number catalog-pagination__number_selected"><a href="#" aria-label="страница">1</a></li>
+        <li class="catalog-pagination__number"><a href="#" aria-label="страница">2</a></li>
+        <li class="catalog-pagination__number"><a href="#" aria-label="страница">3</a></li>
+        <li class="catalog-pagination__number"><a href="#" aria-label="страница">4</a></li>
+        <li class="catalog-pagination__number"><a href="#" aria-label="страница">5</a></li>
+        <li class="catalog-pagination__number catalog-pagination__arrow"><a href="#" aria-label="страница">›</a></li>
       </ul>
     </main>
     <footer class="main-footer section-margin">
       <ul class="social">
-        <li><a class="social__button_tw" href="#">Твиттер</a></li>
-        <li><a class="main-footer-social__button_in" href="#">Инстаграм</a></li>
-        <li><a class="main-footer-social__button_fb" href="#">Фейсбук</a></li>
-        <li><a class="main-footer-social__button_vk" href="#">Вконтакте</a></li>
+        <li class="social__item"><a class="social__button social__button_tw" href="#">Твиттер</a></li>
+        <li class="social__item"><a class="social__button social__button_in" href="#">Инстаграм</a></li>
+        <li class="social__item"><a class="social__button social__button_fb" href="#">Фейсбук</a></li>
+        <li class="social__item"><a class="social__button social__button_vk" href="#">Вконтакте</a></li>
       </ul>
-      <ul class="main-footer-menu">
-        <li class="main-footer-menu__item main-footer-menu__item_bold_heart"><a href="#">Для поставщиков</a></li>
-        <li class="main-footer-menu__item"><a href="#">Наши документы</a></li>
-        <li class="main-footer-menu__item"><a href="#">О производстве</a></li>
-        <li class="main-footer-menu__item"><a href="#">Экологические стандарты</a></li>
-      </ul>
-      <div class="main-footer-copyright">
+      <div class="footer-menu">
+        <a class="footer-menu__button footer-menu__button_bold" href="#">Для поставщиков</a>
+        <a class="footer-menu__button" href="#">Наши документы</a>
+        <a class="footer-menu__button" href="#">О производстве</a>
+        <a class="footer-menu__button" href="#">Экологические стандарты</a>
+      </div>
+      <div class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/decorative/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="36">
-          <p class="main-footer-copyright__text">Сделано в HTML Academy © 2017</p>
         </a>
+        <p class="copyright__text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </div>
