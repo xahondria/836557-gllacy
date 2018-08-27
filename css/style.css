@@ -501,7 +501,6 @@ html {
   font-size: 15px;
   font-weight: bold;
   line-height: 18px;
-  color: ;
 
   padding-top: 14px;
   padding-bottom: 14px;
@@ -1172,4 +1171,108 @@ html {
   position: absolute;
   bottom: 24px;
   right: 24px;
+}
+
+/*catalog page*/
+
+.catalog-path {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+}
+
+.catalog-path__item:not(:last-child) {
+  position: relative;
+}
+
+.catalog-path__item:not(:last-child)::after {
+  content: "»";
+
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  font-weight: 400;
+
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.catalog-path__button {
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.catalog-path__button:hover {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 189, 158, 0.3);
+}
+
+.catalog-path__button_selected {
+  border-bottom: none;
+}
+
+.catalog-path__button_selected:hover {
+  color: white;
+  border-bottom: none;
+}
+
+.heading-creamy {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  line-height: 41px;
+}
+
+.options {
+  display: flex;
+}
+
+.options-item-sorting {
+
+}
+
+.options-item-sorting__select {
+  /*position: relative;*/
+
+  border: none;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, .25);
+  background-image: url("../img/decorative/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 92%;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  width: 193px;
+  height: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  -webkit-appearance: none;
+}
+
+.options-item-sorting__select option {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.options-item-sorting__select:hover,
+.options-item-sorting__select:focus {
+  color: #323232;
+  background-color: white;
+  background-image: url("../img/decorative/select-arrow-black.svg");
+  outline: none;
+}
+
+.options-item__label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: white;
 }
