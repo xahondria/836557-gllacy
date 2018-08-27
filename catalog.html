@@ -123,66 +123,68 @@
             method="post"
             oninput="price_min.value=options_range_slider_price_min.value;
                      price_max.value=options_range_slider_price_max.value">
-        <div class="options-item options-item-sorting">
-          <label class="options-item__label">Сортировка:
-            <select class="options-item-sorting__select" name="item-sorting">
-              <option value="по популярности">по популярности</option>
-              <option value="сначала недорогие">сначала недорогие</option>
-              <option value="сначала дорогие">сначала дорогие</option>
-              <option value="по жирности">по жирности</option>
-            </select>
-          </label>
-        </div>
-        <div class="options-item options-item-range-slider">
-          <span class="options-item__text">Цена:</span>
-          <label aria-label="минимальная цена">
-            <input type="range"
-                   value="100"
-                   min="0"
-                   max="800"
-                   name="options_range_slider_price_min">
-          </label>
-          <output name="price_min" for="options_range_slider_price_min">100</output>
-          <span class="options-item__text">руб. -</span>
-          <label aria-label="максимальная цена">
-            <input type="range"
-                   value="500"
-                   min="0"
-                   max="800"
-                   name="options_range_slider_price_max">
-          </label>
-          <output name="price_max" for="options_range_slider_price_max" >500</output>
-          <span class="options-item__text">руб.</span>
-        </div>
-        <div class="options-item radio-set">
-          <span class="radio-set__text">Жирность:</span>
-          <input class="radio-set__button" id="radio-set__button_0%" type="radio" value="0%" name="fat-content">
-          <label class="radio-set__label" for="radio-set__button_0%" aria-label="жирность 0%">0%</label>
-          <input class="radio-set__button" id="radio-set__button_<10%" type="radio" value="less than 10%" checked name="fat-content">
-          <label class="radio-set__label" for="radio-set__button_<10%" aria-label="жирность до 10%%">до 10%</label>
-          <input class="radio-set__button" id="radio-set__button_<30%" type="radio" value="less than 30%" name="fat-content">
-          <label class="radio-set__label" for="radio-set__button_<30%" aria-label="жирность до 30%">до 30%</label>
-          <input class="radio-set__button" id="radio-set__button_>30%" type="radio" value="more than 30%" name="fat-content">
-          <label class="radio-set__label" for="radio-set__button_>30%" aria-label="жирность выше 30%">выше 30%</label>
-        </div>
-        <div class="options-item options-item-fillers">
-          <span class="radio-set__text">Наполнители:</span>
-          <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_chocolate" type="checkbox" value="chocolate" name="options-item-fillers" checked>
-          <label class="options-item-fillers__label" for="options-item-fillers__checkbox_chocolate">шоколадные</label>
-
-          <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_sugar" type="checkbox" value="sugar" name="options-item-fillers" checked>
-          <label class="options-item-fillers__label" for="options-item-fillers__checkbox_sugar">сахарные присыпки</label>
-
-          <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_fruits" type="checkbox" value="fruits" name="options-item-fillers">
-          <label class="options-item-fillers__label" for="options-item-fillers__checkbox_fruits">фрукты</label>
-
-          <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_syrup" type="checkbox" value="syrup" name="options-item-fillers">
-          <label class="options-item-fillers__label" for="options-item-fillers__checkbox_syrup">сиропы</label>
-
-          <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_jam" type="checkbox" value="jam" name="options-item-fillers">
-          <label class="options-item-fillers__label" for="options-item-fillers__checkbox_jam">джемы</label>
-          <button class="options-item-fillers__button" type="submit">Применить</button>
-        </div>
+        <fieldset class="options-item">
+          <legend class="options-item__legend">Сортировка:</legend>
+          <select class="options-input options-item-sorting__select" name="item-sorting">
+            <option value="по популярности">по популярности</option>
+            <option value="сначала недорогие">сначала недорогие</option>
+            <option value="сначала дорогие">сначала дорогие</option>
+            <option value="по жирности">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset class="options-item">
+          <legend class="options-item__legend">Цена:
+            <output name="price_min" for="options_range_slider_price_min">100</output>
+            <span>руб. -</span>
+            <output name="price_max" for="options_range_slider_price_max" >500</output>
+            <span>руб.</span>
+          </legend>
+          <div class="options-input range-slider">
+            <label aria-label="минимальная цена">
+              <input class="range-slider_price" type="range"
+                     value="100"
+                     min="0"
+                     max="800"
+                     name="options_range_slider_price_min">
+            </label>
+            <label aria-label="максимальная цена">
+              <input class="range-slider_price" type="range"
+                     value="500"
+                     min="0"
+                     max="800"
+                     name="options_range_slider_price_max">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="options-item">
+          <legend class="options-item__legend">Жирность:</legend>
+          <div class="options-input radio-set">
+            <input class="radio-set__button" id="radio-set__button_0%" type="radio" value="0%" name="fat-content">
+            <label class="options__label" for="radio-set__button_0%" aria-label="жирность 0%">0%</label>
+            <input class="radio-set__button" id="radio-set__button_<10%" type="radio" value="less than 10%" checked name="fat-content">
+            <label class="options__label" for="radio-set__button_<10%" aria-label="жирность до 10%%">до 10%</label>
+            <input class="radio-set__button" id="radio-set__button_<30%" type="radio" value="less than 30%" name="fat-content">
+            <label class="options__label" for="radio-set__button_<30%" aria-label="жирность до 30%">до 30%</label>
+            <input class="radio-set__button" id="radio-set__button_>30%" type="radio" value="more than 30%" name="fat-content">
+            <label class="options__label" for="radio-set__button_>30%" aria-label="жирность выше 30%">выше 30%</label>
+          </div>
+        </fieldset>
+        <fieldset class="options-item">
+          <legend class="options-item__legend">Наполнители:</legend>
+          <div class="options-input options-item-fillers">
+            <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_chocolate" type="checkbox" value="chocolate" name="options-item-fillers" checked>
+            <label class="options__label" for="options-item-fillers__checkbox_chocolate">шоколадные</label>
+            <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_sugar" type="checkbox" value="sugar" name="options-item-fillers" checked>
+            <label class="options__label" for="options-item-fillers__checkbox_sugar">сахарные присыпки</label>
+            <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_fruits" type="checkbox" value="fruits" name="options-item-fillers">
+            <label class="options__label" for="options-item-fillers__checkbox_fruits">фрукты</label>
+            <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_syrup" type="checkbox" value="syrup" name="options-item-fillers">
+            <label class="options__label" for="options-item-fillers__checkbox_syrup">сиропы</label>
+            <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_jam" type="checkbox" value="jam" name="options-item-fillers">
+            <label class="options__label" for="options-item-fillers__checkbox_jam">джемы</label>
+          </div>
+        </fieldset>
+        <button class="options__button" type="submit">Применить</button>
       </form>
       <section class="catalog-ice-cream">
         <h2 class="visually-hidden">Каталог товаров</h2>
