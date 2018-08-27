@@ -56,48 +56,54 @@
               </div>
             </form>
           </div>
-          <form class="cart-wrapper" action="https://echo.htmlacademy.ru" method="post">
-            <a href="#" class="cart-label user-navigation__item" aria-label="корзина">2 товара</a>
-            <table class="cart-table">
-              <tr class="cart-table-item">
-                <td class="cart-table-item__delete">
-                  <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
-                </td>
-                <td class="cart-table-item__name-column">
-                  <a class="cart-table-item__name cart-table-item__name_ice-cream-citrus" href="#">Пломбир с апельсиновым джемом</a>
-                  <input type="hidden" name="cart-item" value="citrus">
-                </td>
-                <td class="cart-table-item__amount">
-                  1,5 кг х<span class="cart-table-item__amount_#999999"> 200 руб.</span>
-                </td>
-                <td class="cart-table-item__price">
-                  300 руб.
-                </td>
-              </tr>
-              <tr class="cart-table-item">
-                <td class="cart-table-item__delete">
-                  <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
-                </td>
-                <td class="cart-table-item__name-column">
-                  <a class="cart-table-item__name cart-table-item__name_ice-cream-strawberry" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                  <input type="hidden" name="cart-item" value="strawberry">
-                </td>
-                <td class="cart-table-item__amount">
-                  1,5 кг х
-                  <span class="cart-table-item__amount_#999999">
+          <div class="cart-label user-navigation__item" aria-label="корзина">
+            2 товара
+            <form class="cart-wrapper hidden" action="https://echo.htmlacademy.ru" method="post">
+              <table class="cart-table">
+                <tr class="cart-table-item">
+                  <td class="cart-table-item__delete">
+                    <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
+                  </td>
+                  <td class="cart-table-item__name-column">
+                    <a class="cart-table-item__name cart-table-item__name_ice-cream-citrus" href="#">Пломбир с апельсиновым джемом</a>
+                    <input type="hidden" name="cart-item" value="citrus">
+                  </td>
+                  <td class="cart-table-item__amount">
+                    1,5 кг х<span class="cart-table-item__amount_gray"> 200 руб.</span>
+                  </td>
+                  <td class="cart-table-item__price">
                     300 руб.
-                  </span>
-                </td>
-                <td class="cart-table-item__price">
-                  450 руб.
-                </td>
-              </tr>
-            </table>
-            <p class="cart__total-price">Итого: 750 руб.</p>
-            <button class="cart__button" type="submit">Оформить заказ</button>
-          </form>
-
-
+                  </td>
+                </tr>
+                <tr class="cart-table-item">
+                  <td class="cart-table-item__delete">
+                    <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
+                  </td>
+                  <td class="cart-table-item__name-column">
+                    <a class="cart-table-item__name cart-table-item__name_ice-cream-strawberry" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                    <input type="hidden" name="cart-item" value="strawberry">
+                  </td>
+                  <td class="cart-table-item__amount">
+                    1,5 кг х
+                    <span class="cart-table-item__amount_gray">
+                      300 руб.
+                    </span>
+                  </td>
+                  <td class="cart-table-item__price">
+                    450 руб.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cart__total-price" colspan="4">Итого: 750 руб.</td>
+                </tr>
+                <tr>
+                  <td class="cart-submit" colspan="4">
+                    <button class="button cart__button" type="submit">Оформить заказ</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
         </div>
       </nav>
       <div class="main-header__contacts">

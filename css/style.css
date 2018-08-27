@@ -380,10 +380,9 @@ html {
 }
 
 .cart-label {
+  position: relative;
   padding: 8px 16px 8px 45px;
-
   line-height: 16px;
-
   width: fit-content;
 
   background-image: url("../img/decorative/basket.svg");
@@ -397,14 +396,16 @@ html {
   background-color: #f8f7f4;
 }
 
+.cart-label:hover .cart-wrapper {
+  display: block;
 
-td {
-  border: 1px solid red;
-
+  position: absolute;
+  z-index: 100;
+  top: 32px;
 }
 
-
 .cart-table {
+  width: 540px;
   background-color: #f8f7f4;
 
   color: #323232;
@@ -422,6 +423,10 @@ td {
   height: 50px;
 
   vertical-align: top;
+}
+
+.cart-table-item:nth-last-of-type(3) td {
+  border-bottom: 1px solid #cacac7;
 }
 
 .cart-table-item__delete {
@@ -483,12 +488,32 @@ td {
   width: 120px;
 }
 
-.cart-table-item__amount_\#999999 {
+.cart-table-item__amount_gray {
   color: #999999;
 }
 
 .cart-table-item__price {
   width: 70px;
+}
+
+.cart__total-price {
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  color: ;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.cart-submit {
+  text-align: right;
+}
+
+.cart__button {
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .main-header-contacts__schedule {
