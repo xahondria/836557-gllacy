@@ -1,7 +1,6 @@
 .container {
   padding-top: 10px;
   padding-bottom: 22px;
-
   min-width: 900px;
 
   font-family: "Roboto", "Calibri", sans-serif;
@@ -12,6 +11,12 @@
   text-transform: none;
 
   background-color: #849d8f;
+}
+
+.content-wrapper {
+  min-width: 900px;
+  max-width: 1200px;
+  margin:0 auto;
 }
 
 a {
@@ -31,6 +36,32 @@ html {
 }
 
 /*универсальные классы*/
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex-min {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.flex__1 {
+  flex: 1;
+}
+
+.flex__w50 {
+  width: 50%;
+}
+
+.flex__w25 {
+  width: 25%;
+}
 
 .content-box-component {
   box-sizing: content-box;
@@ -121,9 +152,22 @@ html {
   display: none;
 }
 
-.section-margin {
-  margin-left: 27px;
-  margin-right: 27px;
+.section-wrapper {
+  margin: 40px 20px;
+  min-width: 860px;
+  max-width: 1146px;
+}
+
+@media screen and (min-width: 901px) {
+  .section-wrapper {
+    margin: 40px 27px;
+  }
+}
+
+.section__flex-separator {
+  width: 3%;
+  min-width: 20px;
+  max-width: 23px;
 }
 
 /*header*/
@@ -607,6 +651,7 @@ html {
 
 /*promo*/
 .promo-item {
+  position: relative;
   min-width: 420px;
   max-width: 560px;
   height: 229px;
@@ -634,6 +679,10 @@ html {
 }
 
 .promo-item__button {
+  position: absolute;
+  right: 21px;
+  bottom: 24px;
+
   font-size: 18px;
   text-shadow: none;
 
@@ -650,22 +699,24 @@ html {
 /*popular items*/
 
 .popular-items {
-  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.catalog-ice-cream {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 901px) {
+  .popular-items {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
 }
 
 .catalog-ice-cream-item {
   position: relative;
-
-  max-width: 293px;
-  min-width: 220px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 6px;
+  min-width: 220px;
+  max-width: 291px;
 }
 
 .catalog-ice-cream-item_hit::after {
@@ -777,7 +828,7 @@ html {
 
   border-radius: 13px;
 
-  padding: 25px 21px 25px 21px;
+  padding: 25px 0 0 21px;
 }
 
 .our-advantages__heading {
@@ -795,6 +846,7 @@ html {
   padding: 0;
   padding-left: 56px;
   margin: 0;
+  -webkit-padding-start: 0;
 
   font-size: 16px;
   font-weight: 400;
@@ -803,16 +855,15 @@ html {
 
 .our-advantages-list__item {
   position: relative;
-}
-
-.our-advantages-list__item:not(:last-child) {
+  padding-left: 57px;
   padding-bottom: 25px;
+  padding-right: 25px;
 }
 
 .our-advantages-list__item::before {
   content: "";
   position: absolute;
-  left: -57px;
+  left: 0;
   top: -13px;
 
   background-repeat: no-repeat;
@@ -850,6 +901,7 @@ html {
   background-color: white;
   background-image: url("../img/background/blog-strawberry.jpg");
   background-repeat: no-repeat;
+  background-position: right;
   color: #323232;
 }
 
@@ -917,16 +969,22 @@ html {
   color: #5a5a5a;
 }
 
-.subscribe-block__input {
-  width: 366px;
-  font-size: 16px;
+.subscribe-block__input-wrapper {
+  flex-basis: 368px;
   margin-right: 10px;
+}
+
+.subscribe-block__input {
+  font-size: 16px;
+  width: 100%;
 }
 
 .subscribe-block__button {
   padding-left: 18px;
   padding-right: 18px;
   margin: 0;
+
+  flex-basis: 128px;
 }
 
 /*map*/
