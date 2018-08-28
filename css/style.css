@@ -42,6 +42,14 @@ html {
   flex-direction: row;
 }
 
+.flex_between {
+  justify-content: space-between;
+}
+
+.flex_end {
+  justify-content: flex-end;
+}
+
 .flex_wrap {
   flex-wrap: wrap;
 }
@@ -49,6 +57,10 @@ html {
 .flex-min {
   flex-grow: 0;
   flex-shrink: 0;
+}
+
+.flex__items-center {
+  align-items: center;
 }
 
 .flex__1 {
@@ -172,11 +184,17 @@ html {
 
 /*header*/
 
+.main-navigation {
+  margin-top: -8px;
+  width: 1200px;
+}
+
 /*site-navigation*/
 
 .site-navigation {
   list-style: none;
   -webkit-padding-start: 0;
+  margin: 0;
 }
 
 .site-navigation__item {
@@ -185,15 +203,12 @@ html {
   position: relative;
   border-radius: 16px;
   line-height: 18px;
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
 
 .sub-menu-container {
   border-radius: 0;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  padding-bottom: 5px;
 }
 
 .site-navigation__button {
@@ -312,7 +327,7 @@ html {
 /*user-navigation*/
 
 .user-navigation {
-  display: flex;
+    width: 245px;
 }
 
 .user-navigation__item {
@@ -559,16 +574,30 @@ html {
   padding-right: 14px;
 }
 
+.main-header {
+  margin-top: 0;
+}
+
+main-header-contacts-wrapper {
+  width: 1200px;
+}
+
 .main-header-contacts__schedule {
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 16px;
+
+  text-align: right;
+  margin: 0 0 4px 0;
 }
 
 .main-header-contacts__phone {
   font-size: 22px;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 24px;
+
+  text-align: right;
+  margin: 0;
 }
 
 /*main*/
@@ -950,6 +979,10 @@ html {
 }
 
 .subscribe-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 30px 20px;
   margin: 0;
   height: 208px;
@@ -960,7 +993,6 @@ html {
 
 .subscribe-block__text {
   padding: 0;
-  padding-bottom: 40px;
   margin: 0;
 
   font-size: 16px;

@@ -17,58 +17,62 @@
     <div class="container">
       <div class="content-wrapper">
         <header class="main-header section-wrapper">
-          <a class="main-header__logo">
-            <img src="img/decorative/logo.svg" alt="Логотип Глейси" width="154" height="64">
-          </a>
-          <nav class="main-navigation">
-            <ul class="site-navigation">
-              <li class="site-navigation__item sub-menu-container">
-                <a class="site-navigation__button" href="catalog.html">Каталог</a>
-                <ul class="sub-menu hidden">
-                  <li class="sub-menu__item sub-menu__item_underlined"><a class="sub-menu__button sub-menu__button_bold" href="#">Новинки</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__button" href="catalog.html">Сливочное</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__button" href="#">Щербеты</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__button" href="#">Фруктовый лед</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__button" href="#">Мелорин</a></li>
-                </ul>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__button" href="#">Доставка и оплата</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__button" href="#">О Компании</a>
-              </li>
-            </ul>
-            <div class="user-navigation">
-              <div class="search-wrapper user-navigation__item">
-                <form class="search hidden" action="https://echo.htmlacademy.ru" method="post">
-                  <label aria-label="Что ищем?">
-                    <input class="input search__input" type="text" placeholder="Что ищем?" name="search">
-                  </label>
-                </form>
+          <div class="flex flex__items-center">
+            <a class="main-header__logo">
+              <img src="img/decorative/logo.svg" alt="Логотип Глейси" width="154" height="64">
+            </a>
+            <nav class="main-navigation flex flex_between flex__items-center">
+              <ul class="site-navigation">
+                <li class="site-navigation__item sub-menu-container">
+                  <a class="site-navigation__button" href="catalog.html">Каталог</a>
+                  <ul class="sub-menu hidden">
+                    <li class="sub-menu__item sub-menu__item_underlined"><a class="sub-menu__button sub-menu__button_bold" href="#">Новинки</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="catalog.html">Сливочное</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="#">Щербеты</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="#">Фруктовый лед</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="#">Мелорин</a></li>
+                  </ul>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__button" href="#">Доставка и оплата</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a class="site-navigation__button" href="#">О Компании</a>
+                </li>
+              </ul>
+              <div class="user-navigation flex flex-min flex_between">
+                <div class="search-wrapper user-navigation__item">
+                  <form class="search hidden" action="https://echo.htmlacademy.ru" method="post">
+                    <label aria-label="Что ищем?">
+                      <input class="input search__input" type="text" placeholder="Что ищем?" name="search">
+                    </label>
+                  </form>
+                </div>
+                <div class="login-wrapper user-navigation__item">
+                  Вход
+                  <form class="login hidden" action="https://echo.htmlacademy.ru" method="post">
+                    <label aria-label="Электронная почта">
+                      <input class="input login__input" type="email"  placeholder="Электронная почта" name="email">
+                    </label>
+                    <label aria-label="Пароль">
+                      <input class="input login__input" type="password" placeholder="Пароль" name="password">
+                    </label>
+                    <button class="button" type="submit">Войти</button>
+                    <div class="registration">
+                      <a class="login__registration" href="#">Забыли пароль?</a>
+                      <a class="login__registration" href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+                <a class="cart-label user-navigation__item" href="#">Пусто</a>
               </div>
-              <div class="login-wrapper user-navigation__item">
-                Вход
-                <form class="login hidden" action="https://echo.htmlacademy.ru" method="post">
-                  <label aria-label="Электронная почта">
-                    <input class="input login__input" type="email"  placeholder="Электронная почта" name="email">
-                  </label>
-                  <label aria-label="Пароль">
-                    <input class="input login__input" type="password" placeholder="Пароль" name="password">
-                  </label>
-                  <button class="button" type="submit">Войти</button>
-                  <div class="registration">
-                    <a class="login__registration" href="#">Забыли пароль?</a>
-                    <a class="login__registration" href="#">Новая регистрация</a>
-                  </div>
-                </form>
-              </div>
-              <a class="cart-label user-navigation__item" href="#">Пусто</a>
+            </nav>
+          </div>
+          <div class="main-header-contacts-wrapper flex flex_end">
+            <div class="main-header-contacts">
+              <p class="main-header-contacts__schedule">С 10 до 20, ежедневно</p>
+              <p class="main-header-contacts__phone">8 812 450-25-25</p>
             </div>
-          </nav>
-          <div class="main-header-contacts">
-            <p class="main-header-contacts__schedule">С 10 до 20, ежедневно</p>
-            <p class="main-header-contacts__phone">8 812 450-25-25</p>
           </div>
         </header>
         <main>
