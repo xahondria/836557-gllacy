@@ -182,6 +182,10 @@ html {
   max-width: 23px;
 }
 
+.popup-shadow {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+}
+
 /*header*/
 
 .main-navigation {
@@ -578,8 +582,8 @@ html {
   margin-top: 0;
 }
 
-main-header-contacts-wrapper {
-  width: 1200px;
+.main-header-contacts-wrapper {
+  max-width: 1146px;
 }
 
 .main-header-contacts__schedule {
