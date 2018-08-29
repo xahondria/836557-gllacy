@@ -1118,8 +1118,16 @@ html {
 
 /*footer*/
 
+.main-footer {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
 .social {
   list-style: none;
+  -webkit-padding-start: 0;
+  margin: 0;
+
 }
 
 .social__item {
@@ -1128,6 +1136,10 @@ html {
   height: 38px;
   border: 3px solid rgba(255, 255, 255, .5);
   border-radius: 50%;
+}
+
+.social__item:not(:last-of-type) {
+  margin-right: 11px;
 }
 
 .social__item:hover {
@@ -1188,6 +1200,12 @@ html {
 
 .footer-menu {
   list-style: none;
+
+  width: 305px;
+}
+
+.footer-menu__item {
+  min-width: 140px;
 }
 
 .footer-menu__button {
@@ -1220,6 +1238,7 @@ html {
   font-weight: 400;
   line-height: 18px;
   color: #ffffff;
+  margin: 0;
 }
 
 .copyright__text a {
