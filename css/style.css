@@ -779,21 +779,19 @@ html {
 
 /*popular items*/
 
-.popular-items {
+.popular-items,
+.catalog-ice-cream {
   margin-left: 10px;
   margin-right: 10px;
+  max-width: 1166px;
 }
 
 @media screen and (min-width: 901px) {
-  .popular-items {
+  .popular-items,
+  .catalog-ice-cream {
     margin-left: 17px;
     margin-right: 17px;
   }
-}
-
-.catalog-ice-cream {
-  margin-top: 0;
-  margin-bottom: 75px;
 }
 
 .catalog-ice-cream-item {
