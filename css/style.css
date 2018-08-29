@@ -71,7 +71,7 @@ html {
   flex-shrink: 0;
 }
 
-.flex__items-center {
+.flex_items-center {
   align-items: center;
 }
 
@@ -791,6 +791,11 @@ html {
   }
 }
 
+.catalog-ice-cream {
+  margin-top: 0;
+  margin-bottom: 75px;
+}
+
 .catalog-ice-cream-item {
   position: relative;
   padding-left: 10px;
@@ -1404,17 +1409,23 @@ html {
   line-height: 41px;
 
   margin-top:0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .options {
-  display: flex;
-  flex-wrap: wrap;
+  width: 860px;
+  margin-top: 0;
+  margin-bottom: 18px;
 }
 
 .options-item {
   border: none;
-  margin: 0;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+.options-item:not(:last-child) {
+  margin-right: 15px;
 }
 
 .options__label{
@@ -1435,7 +1446,7 @@ html {
   background-image: url("../img/decorative/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: 92%;
-
+  background-size: 15px;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -1471,7 +1482,7 @@ html {
 
 .range-slider {
   display: block;
-
+  width: 218px;
   padding-left: 21px;
   padding-right: 21px;
 }
@@ -1499,6 +1510,12 @@ html {
   background-size: 22px;
   width: 22px;
   height: 22px;
+}
+
+.radio-set {
+  width: 415px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .radio-set__button {
@@ -1535,6 +1552,12 @@ html {
 
   width: 22px;
   height: 22px;
+}
+
+.options-item-fillers {
+  width: 702px;
+  padding-left: 16px;
+  padding-right: 19px;
 }
 
 .options-item-fillers__checkbox {
@@ -1587,7 +1610,7 @@ html {
   text-decoration: none;
 
   height: 36px;
-  width: 144px;
+  width: 139px;
 
   border: 2px solid white;
   border-radius: 18px;
@@ -1611,6 +1634,9 @@ html {
 
 .catalog-pagination {
   list-style: none;
+  padding: 0 0 30px 0;
+  margin: 0 -7px 0 0;
+  width: 204px;
 }
 
 .catalog-pagination__number {
@@ -1621,7 +1647,7 @@ html {
 
   line-height: 26px;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .catalog-pagination__number a {
@@ -1632,14 +1658,24 @@ html {
 
 .catalog-pagination__arrow a {
   font-size: 26px;
+  line-height: 22px;
   color: white;
+}
+
+.catalog-pagination__number:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.catalog-pagination__arrow_disabled:hover {
+  background-color: transparent;
 }
 
 .catalog-pagination__arrow_disabled a {
   color: rgba(255, 255, 255, .2);
 }
 
-.catalog-pagination__number_selected {
+.catalog-pagination__number_selected,
+.catalog-pagination__number_selected:hover {
   background-color: white;
 }
 .catalog-pagination__number_selected a {

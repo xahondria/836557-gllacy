@@ -11,11 +11,11 @@
   <div class="container">
     <div class="content-wrapper">
       <header class="main-header section-wrapper">
-        <div class="flex flex__items-center">
+        <div class="flex flex_items-center">
           <a class="main-header__logo" href="index.html">
             <img src="img/decorative/logo.svg" alt="Логотип Глейси" width="154" height="64">
           </a>
-          <nav class="main-navigation flex flex_between flex__items-center">
+          <nav class="main-navigation flex flex_between flex_items-center">
             <ul class="site-navigation">
               <li class="site-navigation__item site-navigation__item_selected sub-menu-container ">
                 <a class="site-navigation__button" href="catalog.html">Каталог</a>
@@ -68,8 +68,8 @@
                 <span class="cart-label_padding-left">2 товара</span>
                 <div class="main-navigation__popup-separator">
 
-                  <form class="cart-wrapper popup-shadow hidden" action="https://echo.htmlacademy.ru" method="post">
-                    <table class="cart-table">
+                  <form class="cart-wrapper hidden" action="https://echo.htmlacademy.ru" method="post">
+                    <table class="cart-table popup-shadow">
                       <tr class="cart-table-item">
                         <td class="cart-table-item__delete">
                           <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
@@ -123,69 +123,72 @@
           <p class="main-header-contacts__phone">8 812 450-25-25</p>
         </div>
       </header>
-      <main class="underlined position-relative">
+      <main class="position-relative">
         <ul class="catalog-path position-absolute section-wrapper flex flex_start">
           <li class="catalog-path__item"><a class="catalog-path__button" href="index.html">Главная</a></li>
           <li class="catalog-path__item"><a class="catalog-path__button" href="catalog.html">Каталог</a></li>
           <li class="catalog-path__item"><a class="catalog-path__button catalog-path__button_selected">Сливочное</a></li>
         </ul>
         <h1 class="heading-creamy section-wrapper">Сливочное мороженое</h1>
-        <form class="options"
+        <form class="options section-wrapper"
               action="https://echo.htmlacademy.ru"
               method="post"
               oninput="price_min.value=options_range_slider_price_min.value;
                        price_max.value=options_range_slider_price_max.value">
-          <fieldset class="options-item">
-            <legend class="options-item__legend">Сортировка:</legend>
-            <label aria-label="cортировка">
-              <select class="options-input options-item-sorting__select" name="item-sorting">
-                <option value="по популярности">по популярности</option>
-                <option value="сначала недорогие">сначала недорогие</option>
-                <option value="сначала дорогие">сначала дорогие</option>
-                <option value="по жирности">по жирности</option>
-              </select>
-            </label>
-          </fieldset>
-          <fieldset class="options-item">
-            <legend class="options-item__legend">Цена:
-              <output name="price_min" for="options_range_slider_price_min">100</output>
-              <span>руб. -</span>
-              <output name="price_max" for="options_range_slider_price_max" >500</output>
-              <span>руб.</span>
-            </legend>
-            <div class="options-input range-slider">
-              <label aria-label="минимальная цена">
-                <input class="range-slider_price" type="range"
-                       value="100"
-                       min="0"
-                       max="800"
-                       name="options_range_slider_price_min">
+          <div class="flex flex_start">
+            <fieldset class="options-item">
+              <legend class="options-item__legend">Сортировка:</legend>
+              <label aria-label="cортировка">
+                <select class="options-input options-item-sorting__select" name="item-sorting">
+                  <option value="по популярности">по популярности</option>
+                  <option value="сначала недорогие">сначала недорогие</option>
+                  <option value="сначала дорогие">сначала дорогие</option>
+                  <option value="по жирности">по жирности</option>
+                </select>
               </label>
-              <label aria-label="максимальная цена">
-                <input class="range-slider_price" type="range"
-                       value="500"
-                       min="0"
-                       max="800"
-                       name="options_range_slider_price_max">
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="options-item">
-            <legend class="options-item__legend">Жирность:</legend>
-            <div class="options-input radio-set">
-              <input class="radio-set__button" id="radio-set__button_0%" type="radio" value="0%" name="fat-content">
-              <label class="options__label" for="radio-set__button_0%" aria-label="жирность 0%">0%</label>
-              <input class="radio-set__button" id="radio-set__button_<10%" type="radio" value="less than 10%" checked name="fat-content">
-              <label class="options__label" for="radio-set__button_<10%" aria-label="жирность до 10%%">до 10%</label>
-              <input class="radio-set__button" id="radio-set__button_<30%" type="radio" value="less than 30%" name="fat-content">
-              <label class="options__label" for="radio-set__button_<30%" aria-label="жирность до 30%">до 30%</label>
-              <input class="radio-set__button" id="radio-set__button_>30%" type="radio" value="more than 30%" name="fat-content">
-              <label class="options__label" for="radio-set__button_>30%" aria-label="жирность выше 30%">выше 30%</label>
-            </div>
-          </fieldset>
+            </fieldset>
+            <fieldset class="options-item">
+              <legend class="options-item__legend">Цена:
+                <output name="price_min" for="options_range_slider_price_min">100</output>
+                <span>руб. -</span>
+                <output name="price_max" for="options_range_slider_price_max" >500</output>
+                <span>руб.</span>
+              </legend>
+              <div class="options-input range-slider">
+                <label aria-label="минимальная цена">
+                  <input class="range-slider_price" type="range"
+                         value="100"
+                         min="0"
+                         max="800"
+                         name="options_range_slider_price_min">
+                </label>
+                <label aria-label="максимальная цена">
+                  <input class="range-slider_price" type="range"
+                         value="500"
+                         min="0"
+                         max="800"
+                         name="options_range_slider_price_max">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="options-item">
+              <legend class="options-item__legend">Жирность:</legend>
+              <div class="options-input radio-set flex flex_between flex_items-center">
+                <input class="radio-set__button" id="radio-set__button_0%" type="radio" value="0%" name="fat-content">
+                <label class="options__label" for="radio-set__button_0%" aria-label="жирность 0%">0%</label>
+                <input class="radio-set__button" id="radio-set__button_<10%" type="radio" value="less than 10%" checked name="fat-content">
+                <label class="options__label" for="radio-set__button_<10%" aria-label="жирность до 10%%">до 10%</label>
+                <input class="radio-set__button" id="radio-set__button_<30%" type="radio" value="less than 30%" name="fat-content">
+                <label class="options__label" for="radio-set__button_<30%" aria-label="жирность до 30%">до 30%</label>
+                <input class="radio-set__button" id="radio-set__button_>30%" type="radio" value="more than 30%" name="fat-content">
+                <label class="options__label" for="radio-set__button_>30%" aria-label="жирность выше 30%">выше 30%</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="flex flex_start flex_items-center">
           <fieldset class="options-item">
             <legend class="options-item__legend">Наполнители:</legend>
-            <div class="options-input options-item-fillers">
+            <div class="options-input options-item-fillers flex flex_between flex_items-center">
               <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_chocolate" type="checkbox" value="chocolate" name="options-item-fillers" checked>
               <label class="options__label" for="options-item-fillers__checkbox_chocolate">шоколадные</label>
               <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_sugar" type="checkbox" value="sugar" name="options-item-fillers" checked>
@@ -199,118 +202,127 @@
             </div>
           </fieldset>
           <button class="options__button" type="submit">Применить</button>
+          </div>
         </form>
-        <section class="catalog-ice-cream">
+        <section class="catalog-ice-cream section-wrapper">
           <h2 class="visually-hidden">Каталог товаров</h2>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-citrus.jpg"
-                   alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></a>
-              <p class="catalog-ice-cream__price">310&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+          <div class="flex flex_between">
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-citrus.jpg"
+                     alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></a>
+                <p class="catalog-ice-cream__price">310&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
-          </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-chocolate.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">380&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-chocolate.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада"></a>
+                <p class="catalog-ice-cream__price">380&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="">Сливочно-кофейное с кусочками шоколада</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="">Сливочно-кофейное с кусочками шоколада</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
-          </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-strawberry.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">355&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-strawberry.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></a>
+                <p class="catalog-ice-cream__price">355&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
-          </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">415&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-creme-brulee.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой"></a>
+                <p class="catalog-ice-cream__price">415&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
           </div>
-          <div class="catalog-ice-cream-item">
+          <div class="flex flex_between">
+            <div class="catalog-ice-cream-item flex__w25">
             <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-lingonberry.jpg" alt="Сливочное мороженое с брусничным джемом" width="267" height="267"></a>
+              <a href="#"><img src="img/content/ice-cream-lingonberry.jpg" alt="Сливочное мороженое с брусничным джемом"></a>
               <p class="catalog-ice-cream__price">325&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
             </div>
             <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с брусничным джемом</a></h3>
             <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
           </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-blueberry.jpg" alt="Сливочно-черничное мороженое с цельными ягодами черники" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">410&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-blueberry.jpg" alt="Сливочно-черничное мороженое с цельными ягодами черники"></a>
+                <p class="catalog-ice-cream__price">410&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
-          </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-lemon.jpg" alt="Сливочно-лимонное мороженое с карамельной присыпкой" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">375&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-lemon.jpg" alt="Сливочно-лимонное мороженое с карамельной присыпкой"></a>
+                <p class="catalog-ice-cream__price">375&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
-          </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-chocolate-chips.jpg" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">320&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-chocolate-chips.jpg" alt="Сливочное мороженое с шоколадной стружкой"></a>
+                <p class="catalog-ice-cream__price">320&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с шоколадной стружкой</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с шоколадной стружкой</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
           </div>
-          <div class="catalog-ice-cream-item">
+          <div class="flex flex_between">
+            <div class="catalog-ice-cream-item flex__w25">
             <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-vanilla.jpg" alt="Сливочно-ванильное мороженое с кусочками шоколада" width="267" height="267"></a>
+              <a href="#"><img src="img/content/ice-cream-vanilla.jpg" alt="Сливочно-ванильное мороженое с кусочками шоколада"></a>
               <p class="catalog-ice-cream__price">440&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
             </div>
             <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
             <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
           </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-menthol.jpg" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">435&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-menthol.jpg" alt="Сливочноe мороженое с ментоловым сиропом"></a>
+                <p class="catalog-ice-cream__price">435&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочноe с ментоловым сиропом</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочноe с ментоловым сиропом</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
-          </div>
-          <div class="catalog-ice-cream-item">
-            <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-chocolate-pieces.jpg" alt="Сливочное мороженое с кусочками черного шоколада" width="267" height="267"></a>
-              <p class="catalog-ice-cream__price">355&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+            <div class="catalog-ice-cream-item flex__w25">
+              <div class="catalog-ice-cream-item__image">
+                <a href="#"><img src="img/content/ice-cream-chocolate-pieces.jpg" alt="Сливочное мороженое с кусочками черного шоколада"></a>
+                <p class="catalog-ice-cream__price">355&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+              </div>
+              <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с кусочками черного шоколада</a></h3>
+              <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
             </div>
-            <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с кусочками черного шоколада</a></h3>
-            <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
-          </div>
-          <div class="catalog-ice-cream-item">
+            <div class="catalog-ice-cream-item flex__w25">
             <div class="catalog-ice-cream-item__image">
-              <a href="#"><img src="img/content/ice-cream-mint.jpg" alt="Сливочное мороженое с мятным сиропом" width="267" height="267"></a>
+              <a href="#"><img src="img/content/ice-cream-mint.jpg" alt="Сливочное мороженое с мятным сиропом"></a>
               <p class="catalog-ice-cream__price">420&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
             </div>
             <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с мятным сиропом</a></h3>
             <a class="button catalog-ice-cream__button hidden" href="#">Быстрый просмотр</a>
           </div>
+          </div>
         </section>
-        <ul class="catalog-pagination">
-          <li class="catalog-pagination__number catalog-pagination__arrow catalog-pagination__arrow_disabled"><a aria-label="страница">‹</a></li>
-          <li class="catalog-pagination__number catalog-pagination__number_selected"><a href="#" aria-label="страница">1</a></li>
-          <li class="catalog-pagination__number"><a href="#" aria-label="страница">2</a></li>
-          <li class="catalog-pagination__number"><a href="#" aria-label="страница">3</a></li>
-          <li class="catalog-pagination__number"><a href="#" aria-label="страница">4</a></li>
-          <li class="catalog-pagination__number"><a href="#" aria-label="страница">5</a></li>
-          <li class="catalog-pagination__number catalog-pagination__arrow"><a href="#" aria-label="страница">›</a></li>
-        </ul>
+        <div class="section-wrapper underlined flex flex_end">
+          <ul class="catalog-pagination flex flex_between flex_items-center">
+            <li class="catalog-pagination__number catalog-pagination__arrow catalog-pagination__arrow_disabled"><a aria-label="страница">‹</a></li>
+            <li class="catalog-pagination__number catalog-pagination__number_selected"><a href="#" aria-label="страница">1</a></li>
+            <li class="catalog-pagination__number"><a href="#" aria-label="страница">2</a></li>
+            <li class="catalog-pagination__number"><a href="#" aria-label="страница">3</a></li>
+            <li class="catalog-pagination__number"><a href="#" aria-label="страница">4</a></li>
+            <li class="catalog-pagination__number"><a href="#" aria-label="страница">5</a></li>
+            <li class="catalog-pagination__number catalog-pagination__arrow"><a href="#" aria-label="страница">›</a></li>
+          </ul>
+        </div>
       </main>
-      <footer class="main-footer section-wrapper flex flex_between flex__items-center">
+      <footer class="main-footer section-wrapper flex flex_between flex_items-center">
         <ul class="social flex">
           <li class="social__item"><a class="social__button social__button_tw" href="#">Твиттер</a></li>
           <li class="social__item"><a class="social__button social__button_in" href="#">Инстаграм</a></li>
