@@ -37,6 +37,14 @@ html {
 
 /*универсальные классы*/
 
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
 .flex {
   display: flex;
   flex-direction: row;
@@ -44,6 +52,10 @@ html {
 
 .flex_between {
   justify-content: space-between;
+}
+
+.flex_start {
+  justify-content: flex-start;
 }
 
 .flex_end {
@@ -339,10 +351,6 @@ html {
 
 /*user-navigation*/
 
-.user-navigation {
-    width: 245px;
-}
-
 .user-navigation__item {
   display: block;
 
@@ -358,6 +366,10 @@ html {
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
+}
+
+.user-navigation__item:not(:last-of-type) {
+  margin-right: 10px;
 }
 
 .search-wrapper {
@@ -447,7 +459,7 @@ html {
 .cart-label {
 
   position: relative;
-  padding: 0 16px 0 45px;
+  padding: 0 16px 0 0;
   width: fit-content;
 
   background-image: url("../img/decorative/basket.svg");
@@ -455,7 +467,12 @@ html {
   background-repeat: no-repeat;
 }
 
-.cart-label:hover {
+.cart-label_padding-left {
+  padding-left: 45px;
+}
+
+.cart-label:hover,
+.cart-label_highlited {
   color: #323232;
   background-image: url("../img/decorative/basket-red.svg");
   background-color: #f8f7f4;
@@ -463,14 +480,16 @@ html {
 
 .cart-label:hover .cart-wrapper {
   display: block;
-
-  position: absolute;
-  z-index: 100;
-  top: 32px;
 }
 
 .cart-table {
   width: 540px;
+
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  right: 0;
+
   background-color: #f8f7f4;
 
   color: #323232;
@@ -582,6 +601,11 @@ html {
 
 .main-header {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-header__logo {
+  margin-right: 10px;
 }
 
 .main-header-contacts-wrapper {
@@ -1326,9 +1350,13 @@ html {
 /*catalog page*/
 
 .catalog-path {
-  display: flex;
-  justify-content: left;
   list-style: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+
+  top: -24px;
+  left: 0;
 }
 
 .catalog-path__item:not(:last-child) {
@@ -1374,6 +1402,9 @@ html {
   color: white;
   font-weight: bold;
   line-height: 41px;
+
+  margin-top:0;
+  margin-bottom: 22px;
 }
 
 .options {

@@ -11,114 +11,125 @@
   <div class="container">
     <div class="content-wrapper">
       <header class="main-header section-wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/decorative/logo.svg" alt="Логотип Глейси" width="154" height="64">
-        </a>
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li class="site-navigation__item site-navigation__item_selected sub-menu-container ">
-              <a class="site-navigation__button" href="catalog.html">Каталог</a>
-              <ul class="sub-menu hidden">
-                <li class="sub-menu__item sub-menu__item_underlined"><a class="sub-menu__button sub-menu__button_bold" href="#">Новинки</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__button" href="catalog.html">Сливочное</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__button" href="#">Щербеты</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__button" href="#">Фруктовый лед</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__button" href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__button" href="#">Доставка и оплата</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__button" href="#">О Компании</a>
-            </li>
-          </ul>
-          <div class="user-navigation">
-            <div class="search-wrapper user-navigation__item">
-              <form class="search hidden" action="https://echo.htmlacademy.ru" method="post">
-                <label aria-label="Что ищем?">
-                  <input class="input search__input" type="text" placeholder="Что ищем?" name="search">
-                </label>
-              </form>
-            </div>
-            <div class="login-wrapper user-navigation__item">
-              Вход
-              <form class="login hidden" action="https://echo.htmlacademy.ru" method="post">
-                <label aria-label="Электронная почта">
-                  <input class="input login__input" type="email"  placeholder="Электронная почта" name="email">
-                </label>
-                <label aria-label="Пароль">
-                  <input class="input login__input" type="password" placeholder="Пароль" name="password">
-                </label>
-                <button class="button" type="submit">Войти</button>
-                <div class="registration">
-                  <a class="login__registration" href="#">Забыли пароль?</a>
-                  <a class="login__registration" href="#">Новая регистрация</a>
+        <div class="flex flex__items-center">
+          <a class="main-header__logo" href="index.html">
+            <img src="img/decorative/logo.svg" alt="Логотип Глейси" width="154" height="64">
+          </a>
+          <nav class="main-navigation flex flex_between flex__items-center">
+            <ul class="site-navigation">
+              <li class="site-navigation__item site-navigation__item_selected sub-menu-container ">
+                <a class="site-navigation__button" href="catalog.html">Каталог</a>
+                <div class="main-navigation__popup-separator">
+                  <ul class="sub-menu popup-shadow hidden">
+                    <li class="sub-menu__item sub-menu__item_underlined"><a class="sub-menu__button sub-menu__button_bold" href="#">Новинки</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="catalog.html">Сливочное</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="#">Щербеты</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="#">Фруктовый лед</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__button" href="#">Мелорин</a></li>
+                  </ul>
                 </div>
-              </form>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__button" href="#">Доставка и оплата</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__button" href="#">О Компании</a>
+              </li>
+            </ul>
+            <div class="user-navigation flex flex-min flex_end">
+              <div class="search-wrapper user-navigation__item">
+                <div class="main-navigation__popup-separator">
+                  <form class="search popup-shadow hidden" action="https://echo.htmlacademy.ru" method="post">
+                    <label aria-label="Что ищем?">
+                      <input class="input search__input" type="text" placeholder="Что ищем?" name="search">
+                    </label>
+                  </form>
+                </div>
+              </div>
+              <div class="login-wrapper user-navigation__item">
+                Вход
+                <div class="main-navigation__popup-separator">
+                  <form class="login popup-shadow hidden" action="https://echo.htmlacademy.ru" method="post">
+                    <label aria-label="Электронная почта">
+                      <input class="input login__input" type="email"  placeholder="Электронная почта" name="email">
+                    </label>
+                    <label aria-label="Пароль">
+                      <input class="input login__input" type="password" placeholder="Пароль" name="password">
+                    </label>
+                    <button class="button" type="submit">Войти</button>
+                    <div class="registration">
+                      <a class="login__registration" href="#">Забыли пароль?</a>
+                      <a class="login__registration" href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="cart-label cart-label_highlited user-navigation__item" aria-label="корзина">
+                <span class="cart-label_padding-left">2 товара</span>
+                <div class="main-navigation__popup-separator">
+
+                  <form class="cart-wrapper popup-shadow hidden" action="https://echo.htmlacademy.ru" method="post">
+                    <table class="cart-table">
+                      <tr class="cart-table-item">
+                        <td class="cart-table-item__delete">
+                          <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
+                        </td>
+                        <td class="cart-table-item__name-column">
+                          <a class="cart-table-item__name cart-table-item__name_ice-cream-citrus" href="#">Пломбир с апельсиновым джемом</a>
+                          <input type="hidden" name="cart-item" value="citrus">
+                        </td>
+                        <td class="cart-table-item__amount">
+                          1,5 кг х<span class="cart-table-item__amount_gray"> 200 руб.</span>
+                        </td>
+                        <td class="cart-table-item__price">
+                          300 руб.
+                        </td>
+                      </tr>
+                      <tr class="cart-table-item">
+                        <td class="cart-table-item__delete">
+                          <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
+                        </td>
+                        <td class="cart-table-item__name-column">
+                          <a class="cart-table-item__name cart-table-item__name_ice-cream-strawberry" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                          <input type="hidden" name="cart-item" value="strawberry">
+                        </td>
+                        <td class="cart-table-item__amount">
+                          1,5 кг х
+                          <span class="cart-table-item__amount_gray">
+                            300 руб.
+                          </span>
+                        </td>
+                        <td class="cart-table-item__price">
+                          450 руб.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="cart__total-price" colspan="4">Итого: 750 руб.</td>
+                      </tr>
+                      <tr>
+                        <td class="cart-submit" colspan="4">
+                          <button class="button cart__button" type="submit">Оформить заказ</button>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="cart-label user-navigation__item" aria-label="корзина">
-              2 товара
-              <form class="cart-wrapper hidden" action="https://echo.htmlacademy.ru" method="post">
-                <table class="cart-table">
-                  <tr class="cart-table-item">
-                    <td class="cart-table-item__delete">
-                      <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
-                    </td>
-                    <td class="cart-table-item__name-column">
-                      <a class="cart-table-item__name cart-table-item__name_ice-cream-citrus" href="#">Пломбир с апельсиновым джемом</a>
-                      <input type="hidden" name="cart-item" value="citrus">
-                    </td>
-                    <td class="cart-table-item__amount">
-                      1,5 кг х<span class="cart-table-item__amount_gray"> 200 руб.</span>
-                    </td>
-                    <td class="cart-table-item__price">
-                      300 руб.
-                    </td>
-                  </tr>
-                  <tr class="cart-table-item">
-                    <td class="cart-table-item__delete">
-                      <button class="cart-table-item__button" type="button" aria-label="Удалить позицию из корзины"></button>
-                    </td>
-                    <td class="cart-table-item__name-column">
-                      <a class="cart-table-item__name cart-table-item__name_ice-cream-strawberry" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                      <input type="hidden" name="cart-item" value="strawberry">
-                    </td>
-                    <td class="cart-table-item__amount">
-                      1,5 кг х
-                      <span class="cart-table-item__amount_gray">
-                        300 руб.
-                      </span>
-                    </td>
-                    <td class="cart-table-item__price">
-                      450 руб.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="cart__total-price" colspan="4">Итого: 750 руб.</td>
-                  </tr>
-                  <tr>
-                    <td class="cart-submit" colspan="4">
-                      <button class="button cart__button" type="submit">Оформить заказ</button>
-                    </td>
-                  </tr>
-                </table>
-              </form>
-            </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
         <div class="main-header-contacts">
           <p class="main-header-contacts__schedule">С 10 до 20, ежедневно</p>
           <p class="main-header-contacts__phone">8 812 450-25-25</p>
         </div>
       </header>
-      <main class="underlined section-wrapper">
-        <ul class="catalog-path">
+      <main class="underlined position-relative">
+        <ul class="catalog-path position-absolute section-wrapper flex flex_start">
           <li class="catalog-path__item"><a class="catalog-path__button" href="index.html">Главная</a></li>
           <li class="catalog-path__item"><a class="catalog-path__button" href="catalog.html">Каталог</a></li>
           <li class="catalog-path__item"><a class="catalog-path__button catalog-path__button_selected">Сливочное</a></li>
         </ul>
-        <h1 class="heading-creamy">Сливочное мороженое</h1>
+        <h1 class="heading-creamy section-wrapper">Сливочное мороженое</h1>
         <form class="options"
               action="https://echo.htmlacademy.ru"
               method="post"
@@ -299,18 +310,26 @@
           <li class="catalog-pagination__number catalog-pagination__arrow"><a href="#" aria-label="страница">›</a></li>
         </ul>
       </main>
-      <footer class="main-footer section-wrapper">
-        <ul class="social">
+      <footer class="main-footer section-wrapper flex flex_between flex__items-center">
+        <ul class="social flex">
           <li class="social__item"><a class="social__button social__button_tw" href="#">Твиттер</a></li>
           <li class="social__item"><a class="social__button social__button_in" href="#">Инстаграм</a></li>
           <li class="social__item"><a class="social__button social__button_fb" href="#">Фейсбук</a></li>
           <li class="social__item"><a class="social__button social__button_vk" href="#">Вконтакте</a></li>
         </ul>
-        <div class="footer-menu">
-          <a class="footer-menu__button footer-menu__button_bold" href="#">Для поставщиков</a>
-          <a class="footer-menu__button" href="#">Наши документы</a>
-          <a class="footer-menu__button" href="#">О производстве</a>
-          <a class="footer-menu__button" href="#">Экологические стандарты</a>
+        <div class="footer-menu flex flex_wrap">
+          <div class="footer-menu__item">
+            <a class="footer-menu__button footer-menu__button_bold" href="#">Для поставщиков</a>
+          </div>
+          <div class="footer-menu__item">
+            <a class="footer-menu__button" href="#">Наши документы</a>
+          </div>
+          <div class="footer-menu__item">
+            <a class="footer-menu__button" href="#">О производстве</a>
+          </div>
+          <div class="footer-menu__item">
+            <a class="footer-menu__button" href="#">Экологические стандарты</a>
+          </div>
         </div>
         <div class="copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
