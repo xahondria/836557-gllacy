@@ -1179,8 +1179,6 @@ html {
 }
 
 .social__button {
-  font-size: 0;
-
   display: block;
   background-repeat: no-repeat;
   background-position: center;
