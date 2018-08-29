@@ -193,6 +193,15 @@ html {
   width: 1200px;
 }
 
+.main-navigation__popup-separator {
+  position: absolute;
+  bottom: -4px;
+  height: 70%;
+  width: 100%;
+
+  padding-bottom: 5px;
+}
+
 /*site-navigation*/
 
 .site-navigation {
@@ -363,7 +372,7 @@ html {
   position: absolute;
   z-index: 100;
   top: 100%;
-  left: 0;
+  right: 0;
   background-color: #f8f7f4;
 
   padding: 20px 15px;
@@ -385,16 +394,9 @@ html {
 
 .login-wrapper {
   position: relative;
-
   width: 92px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 16px;
-
-  line-height: 16px;
   text-align: right;
-  vertical-align: middle;
-
   background-size: 20px 19px;
   background-position: 16px 50%;
   background-image: url("../img/decorative/entrance-white.svg");
@@ -414,7 +416,7 @@ html {
   position: absolute;
   z-index: 100;
   top: 100%;
-  left: 0;
+  right: 0;
 
   padding: 20px 19px;
 
@@ -443,9 +445,9 @@ html {
 }
 
 .cart-label {
+
   position: relative;
-  padding: 8px 16px 8px 45px;
-  line-height: 16px;
+  padding: 0 16px 0 45px;
   width: fit-content;
 
   background-image: url("../img/decorative/basket.svg");
