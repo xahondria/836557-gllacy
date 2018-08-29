@@ -675,6 +675,7 @@ html {
 
 .slider-switch__button {
   display: inline-block;
+  vertical-align: baseline;
   border: 2px solid #ffffff;
   border-radius: 50%;
   background-color: transparent;
