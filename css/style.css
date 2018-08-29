@@ -608,10 +608,24 @@ html {
 
 /*slider*/
 
+.slider {
+  position: relative;
+}
+
+.slide {
+  width: 690px;
+  margin: 0 auto;
+  padding-top: 232px;
+}
+
 .slide__title {
   font-size: 60px;
   font-weight: bold;
   line-height: 60px;
+  text-align: center;
+
+  margin: 0;
+  padding-bottom: 36px;
 }
 
 .slide__button {
@@ -619,9 +633,17 @@ html {
   font-weight: bold;
   line-height: 64px;
 
+  display: block;
+  margin: 0 auto;
+  width: 278px;
   height: 64px;
-
   border-radius: 32px;
+}
+
+.slider-switch {
+  position: absolute;
+  left: 0;
+  bottom: 17px;
 }
 
 .slider-switch__button {
