@@ -249,6 +249,7 @@ html {
   color: #ffffff;
 
   border-radius: 16px;
+  z-index: 1;
 }
 
 .site-navigation__item_selected .site-navigation__button {
