@@ -99,14 +99,10 @@ html {
   margin: -1px;
 }
 
-.input {
-  height: 44px;
-}
-
 .input,
 .textarea {
   line-height: 24px;
-  padding: 9px 14px;
+  padding: 10px 14px;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -129,11 +125,15 @@ html {
 .input:hover,
 .textarea:hover {
   border: 2px solid #d3d3d2;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .input:focus,
 .textarea:focus {
   border: 2px solid rgba(46, 136, 228, .52);
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .button {
@@ -150,10 +150,9 @@ html {
   text-decoration: none;
   text-shadow: 0 1px 3px #c63b23;
 
-  line-height: 44px;
+  line-height: 24px;
 
-  height: 44px;
-  padding: 0 25px;
+  padding: 10px 25px;
 
   border: none;
   border-radius: 22px;
@@ -359,14 +358,13 @@ html {
   background-repeat: no-repeat;
 
   vertical-align: middle;
-  line-height: 32px;
-
-  height: 32px;
-  border-radius: 16px;
-
+  color: #ffffff;
   font-size: 14px;
   font-weight: 500;
-  color: #ffffff;
+  line-height: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 16px;
 }
 
 .user-navigation__item:not(:last-of-type) {
@@ -458,18 +456,15 @@ html {
 }
 
 .cart-label {
-
   position: relative;
-  padding: 0 16px 0 0;
-  width: fit-content;
 
   background-image: url("../img/decorative/basket.svg");
   background-position: 16px 6px;
   background-repeat: no-repeat;
 }
 
-.cart-label_padding-left {
-  padding-left: 45px;
+.cart-label_padding {
+  padding: 8px 16px 8px 45px;
 }
 
 .cart-label:hover,
@@ -643,6 +638,7 @@ html {
   width: 690px;
   margin: 0 auto;
   padding-top: 232px;
+  text-align: center;
 }
 
 .slide__title {
@@ -658,13 +654,10 @@ html {
 .slide__button {
   font-size: 32px;
   font-weight: bold;
-  line-height: 64px;
-
-  display: block;
-  margin: 0 auto;
+  line-height: 44px;
   width: 278px;
-  height: 64px;
   border-radius: 32px;
+  margin: 0 auto;
 }
 
 .slider-switch {
@@ -737,10 +730,10 @@ html {
   position: relative;
   min-width: 420px;
   max-width: 560px;
-  height: 229px;
+  min-height: 229px;
 
   border-radius: 15px;
-  padding: 16px 20px;
+  padding: 16px 20px 60px;
 
   background-color: rgba(172, 16, 0, 0.5);
 }
@@ -768,15 +761,18 @@ html {
 
   font-size: 18px;
   text-shadow: none;
-
 }
 
 .promo-item__raspberry {
   background-image: url("../img/background/promo-raspberry.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .promo-item__chocolate{
   background-image: url("../img/background/promo-chocolate.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /*popular items*/
@@ -979,7 +975,7 @@ html {
 .blog-news {
   min-width: 420px;
   max-width: 560px;
-  height: 220px;
+  min-height: 220px;
 
   border-radius: 15px;
   padding: 25px 20px;
@@ -987,7 +983,8 @@ html {
   background-color: white;
   background-image: url("../img/background/blog-strawberry.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: cover;
+  background-position: center;
   color: #323232;
 }
 
@@ -1024,7 +1021,7 @@ html {
 .subscribe-block-wrapper {
   min-width: 420px;
   max-width: 560px;
-  height: 220px;
+  min-height: 220px;
 
   border-radius: 15px;
   padding: 6px 6px;
@@ -1032,6 +1029,8 @@ html {
   background-color: white;
   background-image: url("../img/background/bg-post.svg");
   background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
   color: #323232;
 }
 
@@ -1040,9 +1039,9 @@ html {
   flex-direction: column;
   justify-content: space-between;
 
+  height: 100%;
   padding: 30px 20px;
   margin: 0;
-  height: 208px;
   border-radius: 9px;
 
   background-color: #f8f7f4;
@@ -1287,9 +1286,9 @@ html {
   font-family: "Roboto", "Calibri", sans-serif;
 
   position: fixed;
+  z-index: 100;
   left: 0;
   top: 0;
-  z-index: 1000;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .3);
@@ -1297,15 +1296,16 @@ html {
 
 .popup-feedback {
   position: fixed;
+  z-index: 1000;
+
   left: 50%;
   top: 50%;
   width: 477px;
-  height: 442px;
   margin-left: -237px;
   margin-top: -221px;
   background-color: #f8f7f4;
   border-radius: 9px;
-  padding: 20px 24px 24px;
+  padding: 20px 24px 81px;
 }
 
 .popup-feedback__title {
@@ -1436,7 +1436,13 @@ html {
 .options-input {
   border-radius: 18px;
   background-color: rgba(255, 255, 255, .25);
-  height: 36px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: white;
 }
 
 .options-item-sorting__select {
@@ -1512,8 +1518,8 @@ html {
 
 .radio-set {
   width: 415px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 7px 14px;
+
 }
 
 .radio-set__button {
@@ -1554,8 +1560,7 @@ html {
 
 .options-item-fillers {
   width: 702px;
-  padding-left: 16px;
-  padding-right: 19px;
+  padding: 8px 19px 8px 16px;
 }
 
 .options-item-fillers__checkbox {
@@ -1603,11 +1608,12 @@ html {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
 
-  height: 36px;
   width: 139px;
 
   border: 2px solid white;
@@ -1620,6 +1626,8 @@ html {
   background-color: white;
   color: #323232;
   border: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .options__button:active {
