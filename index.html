@@ -62,10 +62,12 @@
                       <label aria-label="Пароль">
                         <input class="input login__input" type="password" placeholder="Пароль" name="password">
                       </label>
-                      <button class="button" type="submit">Войти</button>
-                      <div class="registration">
-                        <a class="login__registration" href="#">Забыли пароль?</a>
-                        <a class="login__registration" href="#">Новая регистрация</a>
+                      <div class="flex flex_between flex_items-center">
+                        <button class="button login__button" type="submit">Войти</button>
+                        <div class="registration">
+                          <a class="login__registration" href="#">Забыли пароль?</a>
+                          <a class="login__registration" href="#">Новая регистрация</a>
+                        </div>
                       </div>
                     </form>
                   </div>
@@ -95,7 +97,7 @@
               <h2 class="slide__title">Пломбир с помадкой и клубничный щербет</h2>
               <a class="button slide__button" href="#">Давайте оба!</a>
             </div>
-            <div class="slider-switch">
+            <div class="slider-switch flex flex_between">
               <label class="slider-switch__button slider-switch__button-1" for="slide-1" aria-label="первый слайд"></label>
               <label class="slider-switch__button slider-switch__button-2" for="slide-2" aria-label="второй слайд"></label>
               <label class="slider-switch__button slider-switch__button-3" for="slide-3" aria-label="третий слайд"></label>

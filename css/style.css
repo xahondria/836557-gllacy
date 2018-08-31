@@ -102,7 +102,7 @@ html {
 .input,
 .textarea {
   line-height: 24px;
-  padding: 10px 14px;
+  padding: 9px 14px;
 
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
@@ -125,15 +125,15 @@ html {
 .input:hover,
 .textarea:hover {
   border: 2px solid #d3d3d2;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .input:focus,
 .textarea:focus {
   border: 2px solid rgba(46, 136, 228, .52);
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .button {
@@ -242,7 +242,7 @@ html {
 
   font-size: 16px;
   line-height: 18px;
-  padding: 7px 14px;
+  padding: 7px 12px;
   vertical-align: middle;
   font-weight: bold;
   color: #ffffff;
@@ -438,13 +438,22 @@ html {
 
 .login__input {
   width: 239px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.registration {
+  text-align: left;
+  margin-left: 18px;
 }
 
 .login__registration {
   font-size: 13px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 21px;
   color: #323232;
 
   border-bottom: 1px solid rgba(50, 50, 50, 0.3);
@@ -602,6 +611,7 @@ html {
 
 .main-header__logo {
   margin-right: 10px;
+  height: 64px;
 }
 
 .main-header-contacts-wrapper {
@@ -637,7 +647,7 @@ html {
 .slide {
   width: 690px;
   margin: 0 auto;
-  padding-top: 232px;
+  padding-top: 234px;
   text-align: center;
 }
 
@@ -648,7 +658,7 @@ html {
   text-align: center;
 
   margin: 0;
-  padding-bottom: 36px;
+  padding-bottom: 30px;
 }
 
 .slide__button {
@@ -662,8 +672,9 @@ html {
 
 .slider-switch {
   position: absolute;
+  width: 79px;
   left: 0;
-  bottom: 17px;
+  bottom: 22px;
 }
 
 .slider-switch__button {
@@ -751,13 +762,14 @@ html {
   font-weight: bold;
   color: #ffffff;
   line-height: 22px;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .promo-item__button {
   position: absolute;
   right: 21px;
   bottom: 24px;
+  padding: 10px 22px;
 
   font-size: 18px;
   text-shadow: none;
@@ -781,14 +793,15 @@ html {
 .catalog-ice-cream {
   margin-left: 10px;
   margin-right: 10px;
-  max-width: 1166px;
+  margin-top: -6px;
+  max-width: 1171px;
 }
 
 @media screen and (min-width: 901px) {
   .popular-items,
   .catalog-ice-cream {
-    margin-left: 17px;
-    margin-right: 17px;
+    margin-left: 14px;
+    margin-right: 14px;
   }
 }
 
@@ -857,7 +870,8 @@ html {
 
 .catalog-ice-cream__price {
   position: absolute;
-  bottom: 20px;
+  bottom: 7px;
+  left: 3px;
 
   margin: 0;
 
@@ -874,6 +888,7 @@ html {
 
 .catalog-ice-cream__title {
   text-align: center;
+  margin: 13px 0;
 }
 
 .catalog-ice-cream__title a {
@@ -912,12 +927,13 @@ html {
   border-radius: 13px;
 
   padding: 25px 0 0 21px;
+  margin-top: 24px;
 }
 
 .our-advantages__heading {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 21px;
 
   font-size: 24px;
   font-weight: bold;
@@ -939,7 +955,7 @@ html {
 .our-advantages-list__item {
   position: relative;
   padding-left: 57px;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   padding-right: 25px;
 }
 
@@ -991,7 +1007,7 @@ html {
 
 .blog-news__heading {
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   margin: 0;
 
   font-size: 16px;
@@ -1041,7 +1057,7 @@ html {
   justify-content: space-between;
 
   height: 100%;
-  padding: 30px 20px;
+  padding: 30px 20px 34px;
   margin: 0;
   border-radius: 9px;
 
@@ -1099,7 +1115,7 @@ html {
 .feedback-block {
   position: absolute;
   z-index: 10;
-  top: 60px;
+  top: 63px;
   right: 27px;
 
   width: 302px;
@@ -1116,12 +1132,14 @@ html {
   line-height: 20px;
   padding: 0;
   padding-top: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   margin: 0;
 }
 
 .feedback-block__heading_short {
   width: 150px;
+  padding-bottom: 0;
+  padding-top: 18px;
 }
 
 .feedback-block__adress {
@@ -1147,15 +1165,16 @@ html {
 }
 
 .feedback-block__button {
-  margin-top: 20px;
+  margin-top: 26px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
-
 
 /*footer*/
 
 .main-footer {
-  margin-top: 18px;
+  margin-top: 19px;
   margin-bottom: 0;
 }
 
@@ -1234,8 +1253,9 @@ html {
 
 .footer-menu {
   list-style: none;
-
   width: 305px;
+  padding-bottom: 5px;
+  padding-left: 2px;
 }
 
 .footer-menu__item {
@@ -1265,6 +1285,10 @@ html {
   position: absolute;
   left: -19px;
   top: 0;
+}
+
+.copyright {
+  padding-bottom: 12px;
 }
 
 .copyright__text {
@@ -1313,7 +1337,7 @@ html {
   margin-top: -221px;
   background-color: #f8f7f4;
   border-radius: 9px;
-  padding: 20px 24px 81px;
+  padding: 16px 24px 86px;
 }
 
 .popup-feedback__title {
@@ -1356,6 +1380,8 @@ html {
   position: absolute;
   bottom: 24px;
   right: 24px;
+  padding-right: 23px;
+  padding-left: 23px;
 }
 
 /*catalog page*/
