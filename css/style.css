@@ -206,7 +206,7 @@ html {
 
 .main-navigation__popup-separator {
   position: absolute;
-  bottom: -4px;
+  bottom: -5px;
   height: 70%;
   width: 100%;
 
@@ -219,6 +219,7 @@ html {
   list-style: none;
   -webkit-padding-start: 0;
   margin: 0;
+  font-size: 0;
 }
 
 .site-navigation__item {
@@ -242,7 +243,7 @@ html {
 
   font-size: 16px;
   line-height: 18px;
-  padding: 7px 12px;
+  padding: 7px 14px;
   vertical-align: middle;
   font-weight: bold;
   color: #ffffff;
@@ -438,7 +439,7 @@ html {
 
 .login__input {
   width: 239px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   font-size: 14px;
   font-weight: 400;
@@ -502,16 +503,19 @@ html {
   line-height: 16px;
   font-weight: 400;
 
-  padding: 25px 14px 21px 15px;
+  padding: 28px 14px 19px 15px;
   border-radius: 5px;
 
   border-spacing: 0;
 }
 
 .cart-table-item {
-  height: 50px;
-
+  height: 53px;
   vertical-align: top;
+}
+
+.cart-table-item:nth-last-of-type(3) {
+  height: 50px;
 }
 
 .cart-table-item:nth-last-of-type(3) td {
@@ -520,6 +524,7 @@ html {
 
 .cart-table-item__delete {
   width: 21px;
+  padding-top: 0px;
 }
 
 .cart-table-item__button {
@@ -536,7 +541,7 @@ html {
 
 .cart-table-item__name-column {
   width: 295px;
-  padding-left: 47px;
+  padding-left: 51px;
   padding-right: 25px;
 
 }
@@ -558,8 +563,8 @@ html {
   height: 33px;
 
   position: absolute;
-  top: -10px;
-  left: -47px;
+  top: -9px;
+  left: -45px;
 
   background-size: contain;
   border-radius: 50%;
@@ -812,6 +817,7 @@ html {
   padding-top: 6px;
   min-width: 220px;
   max-width: 291px;
+  margin-right: 2px;
 }
 
 .catalog-ice-cream-item_hit::after {
@@ -1057,7 +1063,7 @@ html {
   justify-content: space-between;
 
   height: 100%;
-  padding: 30px 20px 34px;
+  padding: 28px 20px 34px;
   margin: 0;
   border-radius: 9px;
 
