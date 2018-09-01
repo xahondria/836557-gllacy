@@ -132,9 +132,7 @@
         <h1 class="heading-creamy section-wrapper">Сливочное мороженое</h1>
         <form class="options section-wrapper"
               action="https://echo.htmlacademy.ru"
-              method="post"
-              oninput="price_min.value=options_range_slider_price_min.value;
-                       price_max.value=options_range_slider_price_max.value">
+              method="post">
           <div class="flex flex_start">
             <fieldset class="options-item">
               <legend class="options-item__legend">Сортировка:</legend>
@@ -150,25 +148,14 @@
             <fieldset class="options-item">
               <legend class="options-item__legend">Цена:
                 <output name="price_min" for="options_range_slider_price_min">100</output>
-                <span>руб. -</span>
+                <span>руб. &minus;</span>
                 <output name="price_max" for="options_range_slider_price_max" >500</output>
                 <span>руб.</span>
               </legend>
               <div class="options-input range-slider">
-                <label aria-label="минимальная цена">
-                  <input class="range-slider_price" type="range"
-                         value="100"
-                         min="0"
-                         max="800"
-                         name="options_range_slider_price_min">
-                </label>
-                <label aria-label="максимальная цена">
-                  <input class="range-slider_price" type="range"
-                         value="500"
-                         min="0"
-                         max="800"
-                         name="options_range_slider_price_max">
-                </label>
+                <div class="range-slider__bar">
+                  <div class="range-slider__range"></div>
+                </div>
               </div>
             </fieldset>
             <fieldset class="options-item">

@@ -524,7 +524,7 @@ html {
 
 .cart-table-item__delete {
   width: 21px;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .cart-table-item__button {
@@ -1447,7 +1447,7 @@ html {
   line-height: 41px;
 
   margin-top:0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .options {
@@ -1478,6 +1478,7 @@ html {
   background-color: rgba(255, 255, 255, .25);
   padding-top: 9px;
   padding-bottom: 9px;
+  margin-top: 6px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1527,33 +1528,46 @@ html {
 .range-slider {
   display: block;
   width: 218px;
-  padding-left: 21px;
-  padding-right: 21px;
+  padding: 16px 21px;
 }
 
-.range-slider_price {
-  -webkit-appearance: none;
-  width: 176px;
+.range-slider__bar {
   height: 4px;
   background: rgba(255, 255, 255, .5);
-  outline: none;
 }
 
-.range-slider_price::-webkit-slider-thumb {
-  -webkit-appearance: none;
+.range-slider__range {
+  position: relative;
+  height: 4px;
+  background: white;
+  margin-left: 14%;
+  margin-right: 30%;
+}
 
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/decorative/filter-button.svg");
-  background-repeat: no-repeat;
-  background-size: 20px;
+.range-slider__range::before,
+.range-slider__range::after {
+  content: "";
+  position: absolute;
+
+  width: 4px;
+  height: 4px;
+
+  box-sizing: content-box;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 1px 1px 0 rgba(171, 171, 171, .5);
+  border-radius: 50%;
   cursor: pointer;
 }
 
-.range-slider_price:hover::-webkit-slider-thumb {
-  background-size: 22px;
-  width: 22px;
-  height: 22px;
+.range-slider__range::before {
+  top: -8px;
+  left: -10px;
+}
+
+.range-slider__range::after {
+  top: -8px;
+  right: -10px;
 }
 
 .radio-set {
