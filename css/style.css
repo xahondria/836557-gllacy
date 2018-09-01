@@ -1469,8 +1469,8 @@ html {
 .options__label{
   font-size: 16px;
   font-weight: 500;
-  color: white;
   line-height: 18px;
+  color: white;
 }
 
 .options-input {
@@ -1544,9 +1544,8 @@ html {
   margin-right: 30%;
 }
 
-.range-slider__range::before,
-.range-slider__range::after {
-  content: "";
+.range-slider__min,
+.range-slider__max {
   position: absolute;
 
   width: 4px;
@@ -1560,20 +1559,27 @@ html {
   cursor: pointer;
 }
 
-.range-slider__range::before {
+.range-slider__min {
   top: -8px;
   left: -10px;
 }
 
-.range-slider__range::after {
+.range-slider__max {
   top: -8px;
   right: -10px;
+}
+
+.range-slider__min:hover {
+  transform: scale(1.1);
+}
+
+.range-slider__max:hover {
+  transform: scale(1.1);
 }
 
 .radio-set {
   width: 415px;
   padding: 7px 14px;
-
 }
 
 .radio-set__button {

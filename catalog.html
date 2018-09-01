@@ -154,21 +154,32 @@
               </legend>
               <div class="options-input range-slider">
                 <div class="range-slider__bar">
-                  <div class="range-slider__range"></div>
+                  <div class="range-slider__range">
+                    <div class="range-slider__min"></div>
+                    <div class="range-slider__max"></div>
+                  </div>
                 </div>
               </div>
             </fieldset>
             <fieldset class="options-item">
               <legend class="options-item__legend">Жирность:</legend>
               <div class="options-input radio-set flex flex_between flex_items-center">
-                <input class="radio-set__button" id="radio-set__button_0%" type="radio" value="0%" name="fat-content">
-                <label class="options__label" for="radio-set__button_0%" aria-label="жирность 0%">0%</label>
-                <input class="radio-set__button" id="radio-set__button_<10%" type="radio" value="less than 10%" checked name="fat-content">
-                <label class="options__label" for="radio-set__button_<10%" aria-label="жирность до 10%%">до 10%</label>
-                <input class="radio-set__button" id="radio-set__button_<30%" type="radio" value="less than 30%" name="fat-content">
-                <label class="options__label" for="radio-set__button_<30%" aria-label="жирность до 30%">до 30%</label>
-                <input class="radio-set__button" id="radio-set__button_>30%" type="radio" value="more than 30%" name="fat-content">
-                <label class="options__label" for="radio-set__button_>30%" aria-label="жирность выше 30%">выше 30%</label>
+                <label class="options__label" aria-label="жирность 0%">
+                  <input class="radio-set__button" type="radio" value="0%" name="fat-content">
+                  0%
+                </label>
+                <label class="options__label" aria-label="жирность до 10%%">
+                  <input class="radio-set__button" type="radio" value="less than 10%" checked name="fat-content">
+                  до 10%
+                </label>
+                <label class="options__label" aria-label="жирность до 30%">
+                  <input class="radio-set__button" type="radio" value="less than 30%" name="fat-content">
+                  до 30%
+                </label>
+                <label class="options__label" aria-label="жирность выше 30%">
+                  <input class="radio-set__button" type="radio" value="more than 30%" name="fat-content">
+                  выше 30%
+                </label>
               </div>
             </fieldset>
           </div>
