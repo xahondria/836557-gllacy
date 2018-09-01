@@ -133,7 +133,7 @@
         <form class="options section-wrapper"
               action="https://echo.htmlacademy.ru"
               method="post">
-          <div class="flex flex_start">
+          <div class="flex flex_start flex_wrap">
             <fieldset class="options-item">
               <legend class="options-item__legend">Сортировка:</legend>
               <label aria-label="cортировка">
@@ -163,43 +163,57 @@
             </fieldset>
             <fieldset class="options-item">
               <legend class="options-item__legend">Жирность:</legend>
-              <div class="options-input radio-set flex flex_between flex_items-center">
-                <label class="options__label" aria-label="жирность 0%">
-                  <input class="radio-set__button" type="radio" value="0%" name="fat-content">
-                  0%
-                </label>
-                <label class="options__label" aria-label="жирность до 10%%">
-                  <input class="radio-set__button" type="radio" value="less than 10%" checked name="fat-content">
-                  до 10%
-                </label>
-                <label class="options__label" aria-label="жирность до 30%">
-                  <input class="radio-set__button" type="radio" value="less than 30%" name="fat-content">
-                  до 30%
-                </label>
-                <label class="options__label" aria-label="жирность выше 30%">
-                  <input class="radio-set__button" type="radio" value="more than 30%" name="fat-content">
-                  выше 30%
-                </label>
+              <div class="options-input radio-set">
+                <div class="radio-set__wrapper flex flex_start flex_wrap">
+                  <label class="options__label" aria-label="жирность 0%">
+                    <input class="radio-set__button" type="radio" value="0%" name="fat-content">
+                    0%
+                  </label>
+                  <label class="options__label" aria-label="жирность до 10%%">
+                    <input class="radio-set__button" type="radio" value="less than 10%" checked name="fat-content">
+                    до 10%
+                  </label>
+                  <label class="options__label" aria-label="жирность до 30%">
+                    <input class="radio-set__button" type="radio" value="less than 30%" name="fat-content">
+                    до 30%
+                  </label>
+                  <label class="options__label" aria-label="жирность выше 30%">
+                    <input class="radio-set__button" type="radio" value="more than 30%" name="fat-content">
+                    выше 30%
+                  </label>
+                </div>
               </div>
             </fieldset>
           </div>
-          <div class="flex flex_start flex_items-center">
-          <fieldset class="options-item">
-            <legend class="options-item__legend">Наполнители:</legend>
-            <div class="options-input options-item-fillers flex flex_between flex_items-center">
-              <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_chocolate" type="checkbox" value="chocolate" name="options-item-fillers" checked>
-              <label class="options__label" for="options-item-fillers__checkbox_chocolate">шоколадные</label>
-              <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_sugar" type="checkbox" value="sugar" name="options-item-fillers" checked>
-              <label class="options__label" for="options-item-fillers__checkbox_sugar">сахарные присыпки</label>
-              <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_fruits" type="checkbox" value="fruits" name="options-item-fillers">
-              <label class="options__label" for="options-item-fillers__checkbox_fruits">фрукты</label>
-              <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_syrup" type="checkbox" value="syrup" name="options-item-fillers">
-              <label class="options__label" for="options-item-fillers__checkbox_syrup">сиропы</label>
-              <input class="options-item-fillers__checkbox" id="options-item-fillers__checkbox_jam" type="checkbox" value="jam" name="options-item-fillers">
-              <label class="options__label" for="options-item-fillers__checkbox_jam">джемы</label>
-            </div>
-          </fieldset>
-          <button class="options__button" type="submit">Применить</button>
+          <div class="flex flex_start flex_items-center flex_wrap">
+            <fieldset class="options-item">
+              <legend class="options-item__legend">Наполнители:</legend>
+              <div class="options-input fillers flex flex_start flex_wrap">
+                <div class="fillers__wrapper flex flex_start flex_wrap">
+                  <label class="options__label fillers__label">
+                    <input class="fillers__checkbox" type="checkbox" value="chocolate" name="fillers" checked>
+                    шоколадные
+                  </label>
+                  <label class="options__label fillers__label">
+                    <input class="fillers__checkbox" type="checkbox" value="sugar" name="fillers" checked>
+                    сахарные присыпки
+                  </label>
+                  <label class="options__label fillers__label">
+                    <input class="fillers__checkbox" type="checkbox" value="fruits" name="fillers">
+                    фрукты
+                  </label>
+                  <label class="options__label fillers__label">
+                    <input class="fillers__checkbox" type="checkbox" value="syrup" name="fillers">
+                    сиропы
+                  </label>
+                  <label class="options__label fillers__label">
+                    <input class="fillers__checkbox" type="checkbox" value="jam" name="fillers">
+                    джемы
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <button class="options-item options__button" type="submit">Применить</button>
           </div>
         </form>
         <section class="catalog-ice-cream section-wrapper">

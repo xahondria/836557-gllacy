@@ -1451,7 +1451,6 @@ html {
 }
 
 .options {
-  width: 860px;
   margin-top: 0;
   margin-bottom: 18px;
 }
@@ -1462,8 +1461,16 @@ html {
   padding: 0;
 }
 
-.options-item:not(:last-child) {
+.options-item {
   margin-right: 15px;
+}
+
+.radio-set__wrapper {
+  margin-right: -17px;
+}
+
+.fillers__wrapper {
+  margin-right: -20px;
 }
 
 .options__label{
@@ -1471,6 +1478,16 @@ html {
   font-weight: 500;
   line-height: 18px;
   color: white;
+  margin-left: 29px;
+  margin-right: 17px;
+
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.fillers__label {
+  margin-left: 29px;
+  margin-right: 20px;
 }
 
 .options-input {
@@ -1578,11 +1595,11 @@ html {
 }
 
 .radio-set {
-  width: 415px;
-  padding: 7px 14px;
+  padding: 0 16px 0 14px;
 }
 
 .radio-set__button {
+  position: relative;
   -webkit-appearance: none;
   cursor: pointer;
   opacity: .8;
@@ -1598,6 +1615,11 @@ html {
 
 .radio-set__button::before {
   content: "";
+
+  position: absolute;
+  top: -16px;
+  left: -28px;
+
   display: block;
   background-image: url("../img/decorative/radio-off.svg");
   background-size: contain;
@@ -1618,27 +1640,32 @@ html {
   height: 22px;
 }
 
-.options-item-fillers {
-  width: 702px;
-  padding: 8px 19px 8px 16px;
+.fillers {
+  padding: 0 19px 0 15px;
 }
 
-.options-item-fillers__checkbox {
+.fillers__checkbox {
+  position: relative;
   -webkit-appearance: none;
   cursor: pointer;
   opacity: .8;
 }
 
-.options-item-fillers__checkbox:hover {
+.fillers__checkbox:hover {
   opacity: 1;
 }
 
-.options-item-fillers__checkbox:disabled {
+.fillers__checkbox:disabled {
   opacity: .4;
 }
 
-.options-item-fillers__checkbox::before {
+.fillers__checkbox::before {
   content: "";
+
+  position: absolute;
+  top: -15px;
+  left: -28px;
+
   display: block;
   background-image: url("../img/decorative/checkbox-off.svg");
   background-size: contain;
@@ -1648,14 +1675,15 @@ html {
   height: 20px;
 }
 
-.options-item-fillers__checkbox:checked::before {
+.fillers__checkbox:checked::before {
   content: "";
+
   display: block;
   background-image: url("../img/decorative/checkbox-on.svg");
   background-size: contain;
   background-repeat: no-repeat;
 
-  width: 20px;
+  width: 23px;
   height: 20px;
 }
 
@@ -1674,7 +1702,8 @@ html {
   vertical-align: middle;
   text-decoration: none;
 
-  width: 139px;
+  width: 144px;
+  margin-bottom: -6px;
 
   border: 2px solid white;
   border-radius: 18px;
