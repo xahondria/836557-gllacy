@@ -142,6 +142,7 @@ html {
   font-size: 16px;
   font-weight: 400;
   color: #999999;
+  vertical-align: middle;
 }
 
 .input:-ms-input-placeholder,
@@ -248,7 +249,7 @@ html {
 .section__flex-separator {
   width: 3%;
   min-width: 20px;
-  max-width: 23px;
+  max-width: 25px;
 }
 
 .popup-shadow {
@@ -276,7 +277,7 @@ html {
 
 .site-navigation {
   list-style: none;
-  -webkit-padding-start: 0;
+  padding-left: 0;
   margin: 0;
   font-size: 0;
 }
@@ -353,7 +354,7 @@ html {
 
 .sub-menu {
   list-style: none;
-  -webkit-padding-start: 0;
+  padding-left: 0;
   background-color: #f8f7f4;
   border-radius: 5px;
 }
@@ -367,7 +368,11 @@ html {
   font-size: 14px;
   font-weight: normal;
   color: #323232;
-  vertical-align: center;
+  vertical-align: middle;
+}
+
+.sub-menu__item {
+  line-height: 0;
 }
 
 .sub-menu__item:hover {
@@ -506,7 +511,10 @@ html {
 }
 
 .registration {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   margin-left: 18px;
 }
 
@@ -816,6 +824,7 @@ html {
 }
 
 /*promo*/
+
 .promo-item {
   position: relative;
   min-width: 420px;
@@ -992,21 +1001,25 @@ html {
   z-index: 6;
 }
 
-.catalog-ice-cream-item:hover .catalog-ice-cream__button {
-  position: absolute;
-  z-index: 100;
-  top: 100%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+.catalog-ice-cream__button-wrapper {
+  width: 100%;
+  text-align: center;
+}
 
+.catalog-ice-cream__button {
   font-size: 18px;
   padding-left: 13px;
   padding-right: 13px;
 
-  display: block;
   max-width: 200px;
+}
+
+.catalog-ice-cream-item:hover .catalog-ice-cream__button-wrapper {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  display: block;
 }
 
 /*our-advantages*/
