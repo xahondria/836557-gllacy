@@ -143,6 +143,9 @@ html {
   font-weight: 400;
   color: #999999;
   vertical-align: middle;
+  line-height: 24px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .input:-ms-input-placeholder,
@@ -150,6 +153,11 @@ html {
   font-size: 16px;
   font-weight: 400;
   color: #999999;
+  line-height: 24px;
+  vertical-align: middle;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
 }
 
 .input::-ms-input-placeholder,
@@ -506,7 +514,6 @@ html {
   margin-bottom: 20px;
 
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
 }
 
@@ -988,7 +995,7 @@ html {
 
 .catalog-ice-cream__title {
   text-align: center;
-  margin: 13px 6px;
+  margin: 13px 7px;
 }
 
 .catalog-ice-cream__title a {
@@ -1499,9 +1506,9 @@ html {
 
 .catalog-path {
   list-style: none;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-padding-start: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   top: -24px;
   left: 0;
