@@ -36,7 +36,7 @@
                 <a class="site-navigation__button" href="#">О Компании</a>
               </li>
             </ul>
-            <div class="user-navigation flex flex-min flex_end">
+            <div class="user-navigation flex flex-min flex_end flex_wrap">
               <div class="search-wrapper user-navigation__item">
                 <div class="main-navigation__popup-separator">
                   <form class="search popup-shadow hidden" action="https://echo.htmlacademy.ru" method="post">
@@ -56,10 +56,12 @@
                     <label aria-label="Пароль">
                       <input class="input login__input" type="password" placeholder="Пароль" name="password">
                     </label>
-                    <button class="button" type="submit">Войти</button>
-                    <div class="registration">
-                      <a class="login__registration" href="#">Забыли пароль?</a>
-                      <a class="login__registration" href="#">Новая регистрация</a>
+                    <div class="flex flex_between flex_items-center">
+                      <button class="button login__button" type="submit">Войти</button>
+                      <div class="registration">
+                        <a class="login__registration" href="#">Забыли пароль?</a>
+                        <a class="login__registration" href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </form>
                 </div>
