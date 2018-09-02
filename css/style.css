@@ -1613,6 +1613,13 @@ html {
   line-height: 18px;
   font-weight: 500;
   color: white;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.options-input::-ms-expand {
+  display: none;
 }
 
 .options-item-sorting__select {
@@ -1626,11 +1633,11 @@ html {
   font-weight: 500;
   line-height: 18px;
 
+  height: 36px;
+
   width: 193px;
   padding-left: 15px;
   padding-right: 15px;
-
-  -webkit-appearance: none;
 }
 
 .options-item-sorting__select option {
