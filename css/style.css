@@ -888,7 +888,7 @@ html {
 @media screen and (min-width: 901px) {
   .popular-items,
   .catalog-ice-cream {
-    margin-left: 14px;
+    margin-left: 15px;
     margin-right: 14px;
   }
 }
@@ -899,7 +899,6 @@ html {
 
 .catalog-row {
   margin-bottom: 17px;
-  margin-left: 2px;
 }
 
 .catalog-ice-cream-item {
@@ -1037,8 +1036,7 @@ html {
 
 .our-advantages__heading {
   margin: 0;
-  padding: 0;
-  padding-bottom: 21px;
+  padding: 0 21px 21px 0;
 
   font-size: 24px;
   font-weight: bold;
@@ -1048,9 +1046,7 @@ html {
 .our-advantages-list {
   list-style: none;
   padding: 0;
-  padding-left: 56px;
   margin: 0;
-  -webkit-padding-start: 0;
 
   font-size: 16px;
   font-weight: 400;
@@ -1295,7 +1291,7 @@ html {
 
 .social {
   list-style: none;
-  -webkit-padding-start: 0;
+  padding-left: 0;
   margin: 0;
 
 }
