@@ -1727,8 +1727,13 @@ html {
 .radio-set__button {
   position: relative;
   -webkit-appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
   opacity: .8;
+}
+
+.radio-set__button::-ms-check {
+  display: none;
 }
 
 .radio-set__button:hover {
