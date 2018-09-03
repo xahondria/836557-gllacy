@@ -452,7 +452,7 @@ html {
   border-radius: 16px;
 }
 
-.user-navigation__item:not(:last-of-type) {
+.user-navigation__item:not(:last-child) {
   margin-right: 10px;
 }
 
