@@ -1018,6 +1018,11 @@ html {
   z-index: 6;
 }
 
+.catalog-ice-cream__title a:hover {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 189, 158, 0.3);
+}
+
 .catalog-ice-cream__button-wrapper {
   width: 100%;
   text-align: center;
@@ -2024,6 +2029,8 @@ html {
 
 .catalog-pagination__arrow_disabled a {
   color: rgba(255, 255, 255, .2);
+  pointer-events: none;
+  cursor: default;
 }
 
 .catalog-pagination__number_selected,
