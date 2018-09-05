@@ -452,7 +452,7 @@ html {
   border-radius: 16px;
 }
 
-.user-navigation__item:not(:last-of-type) {
+.user-navigation__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1016,6 +1016,11 @@ html {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   position: relative;
   z-index: 6;
+}
+
+.catalog-ice-cream__title a:hover {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 189, 158, 0.3);
 }
 
 .catalog-ice-cream__button-wrapper {
@@ -1861,7 +1866,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
 
-  width: 20px;
+  width: 23px;
   height: 20px;
 
   cursor: pointer;
@@ -1872,60 +1877,125 @@ html {
   opacity: 1;
 }
 
-.fillers__checkbox:checked ~ .fillers__label::before {
-  content: "";
-
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  width: 23px;
-  height: 20px;
-}
-
 .fillers__checkbox_chocolate:checked ~ .fillers__label_chocolate::before {
   background-image: url("../img/decorative/checkbox-on.svg");
+}
+
+.fillers__checkbox_chocolate:disabled ~ .fillers__label_chocolate::before {
+  opacity: 1;
+}
+
+.fillers__checkbox_chocolate:disabled ~ .fillers__label_chocolate {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.fillers__checkbox_chocolate:checked:disabled ~ .fillers__label_chocolate::before {
+  background-image: url("../img/decorative/checkbox-on.svg");
+  opacity: 1;
+}
+
+.fillers__checkbox_chocolate:checked:disabled ~ .fillers__label_chocolate {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
 }
 
 .fillers__checkbox_fruits:checked ~ .fillers__label_fruits::before {
   background-image: url("../img/decorative/checkbox-on.svg");
 }
 
+.fillers__checkbox_fruits:disabled ~ .fillers__label_fruits::before {
+  opacity: 1;
+}
+
+.fillers__checkbox_fruits:disabled ~ .fillers__label_fruits {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+.fillers__checkbox_fruits:checked:disabled ~ .fillers__label_fruits::before {
+  background-image: url("../img/decorative/checkbox-on.svg");
+  opacity: 1;
+}
+
+.fillers__checkbox_fruits:checked:disabled ~ .fillers__label_fruits {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+
 .fillers__checkbox_jam:checked ~ .fillers__label_jam::before {
   background-image: url("../img/decorative/checkbox-on.svg");
+}
+
+.fillers__checkbox_jam:disabled ~ .fillers__label_jam::before {
+  opacity: 1;
+}
+
+.fillers__checkbox_jam:disabled ~ .fillers__label_jam {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+.fillers__checkbox_jam:checked:disabled ~ .fillers__label_jam::before {
+  background-image: url("../img/decorative/checkbox-on.svg");
+  opacity: 1;
+}
+
+.fillers__checkbox_jam:checked:disabled ~ .fillers__label_jam {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
 }
 
 .fillers__checkbox_sugar:checked ~ .fillers__label_sugar::before {
   background-image: url("../img/decorative/checkbox-on.svg");
 }
 
+.fillers__checkbox_sugar:disabled ~ .fillers__label_sugar::before {
+  opacity: 1;
+}
+
+.fillers__checkbox_sugar:disabled ~ .fillers__label_sugar {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+.fillers__checkbox_sugar:checked:disabled ~ .fillers__label_sugar::before {
+  background-image: url("../img/decorative/checkbox-on.svg");
+  opacity: 1;
+}
+
+.fillers__checkbox_sugar:checked:disabled ~ .fillers__label_sugar {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+
 .fillers__checkbox_syrup:checked ~ .fillers__label_syrup::before {
   background-image: url("../img/decorative/checkbox-on.svg");
 }
 
-.fillers__checkbox_chocolate:disabled ~ .fillers__label_chocolate,
-.fillers__checkbox_chocolate:disabled ~ .fillers__label_chocolate::before {
-  opacity: .4;
-}
-
-.fillers__checkbox_fruits:disabled ~ .fillers__label_fruits,
-.fillers__checkbox_fruits:disabled ~ .fillers__label_fruits::before {
-  opacity: .4;
-}
-
-.fillers__checkbox_jam:disabled ~ .fillers__label_jam,
-.fillers__checkbox_jam:disabled ~ .fillers__label_jam::before {
-  opacity: .4;
-}
-
-.fillers__checkbox_sugar:disabled ~ .fillers__label_sugar,
-.fillers__checkbox_sugar:disabled ~ .fillers__label_sugar::before {
-  opacity: .4;
-}
-
-.fillers__checkbox_syrup:disabled ~ .fillers__label_syrup,
 .fillers__checkbox_syrup:disabled ~ .fillers__label_syrup::before {
+  opacity: 1;
+}
+
+.fillers__checkbox_syrup:disabled ~ .fillers__label_syrup {
   opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+.fillers__checkbox_syrup:checked:disabled ~ .fillers__label_syrup::before {
+  background-image: url("../img/decorative/checkbox-on.svg");
+  opacity: 1;
+}
+
+.fillers__checkbox_syrup:checked:disabled ~ .fillers__label_syrup {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
 }
 
 .fillers__checkbox {
@@ -2024,6 +2094,8 @@ html {
 
 .catalog-pagination__arrow_disabled a {
   color: rgba(255, 255, 255, .2);
+  pointer-events: none;
+  cursor: default;
 }
 
 .catalog-pagination__number_selected,
