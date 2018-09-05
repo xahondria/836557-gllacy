@@ -1811,36 +1811,56 @@ html {
   background-image: url("../img/decorative/radio-on.svg");
 }
 
+.radio-set__button_fat-content-0:disabled ~ .radio-set__label_fat-content-0::before {
+  opacity: 1;
+}
+
+.radio-set__button_fat-content-0:disabled ~ .radio-set__label_fat-content-0{
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+
 .radio-set__button_fat-content-10:checked ~ .radio-set__label_fat-content-10::before {
   background-image: url("../img/decorative/radio-on.svg");
+}
+
+.radio-set__button_fat-content-10:disabled ~ .radio-set__label_fat-content-10::before {
+  opacity: 1;
+}
+
+.radio-set__button_fat-content-10:disabled ~ .radio-set__label_fat-content-10 {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
 }
 
 .radio-set__button_fat-content-30:checked ~ .radio-set__label_fat-content-30::before {
   background-image: url("../img/decorative/radio-on.svg");
 }
 
+.radio-set__button_fat-content-30:disabled ~ .radio-set__label_fat-content-30::before {
+  opacity: 1;
+}
+
+.radio-set__button_fat-content-30:disabled ~ .radio-set__label_fat-content-30 {
+  opacity: .4;
+  pointer-events: none;
+  cursor: default;
+}
+
 .radio-set__button_fat-content-30more:checked ~ .radio-set__label_fat-content-30more::before {
   background-image: url("../img/decorative/radio-on.svg");
 }
 
-.radio-set__button_fat-content-0:disabled ~ .radio-set__label_fat-content-0,
-.radio-set__button_fat-content-0:disabled ~ .radio-set__label_fat-content-0::before {
-  opacity: .4;
-}
-
-.radio-set__button_fat-content-10:disabled ~ .radio-set__label_fat-content-10,
-.radio-set__button_fat-content-10:disabled ~ .radio-set__label_fat-content-10::before {
-  opacity: .4;
-}
-
-.radio-set__button_fat-content-30:disabled ~ .radio-set__label_fat-content-30,
-.radio-set__button_fat-content-30:disabled ~ .radio-set__label_fat-content-30::before {
-  opacity: .4;
-}
-
-.radio-set__button_fat-content-30more:disabled ~ .radio-set__label_fat-content-30more,
 .radio-set__button_fat-content-30more:disabled ~ .radio-set__label_fat-content-30more::before {
+  opacity: 1;
+}
+
+.radio-set__button_fat-content-30more:disabled ~ .radio-set__label_fat-content-30more {
   opacity: .4;
+  pointer-events: none;
+  cursor: default;
 }
 
 .radio-set__button {
@@ -1912,17 +1932,6 @@ html {
   cursor: default;
 }
 
-.fillers__checkbox_chocolate:checked:disabled ~ .fillers__label_chocolate::before {
-  background-image: url("../img/decorative/checkbox-on.svg");
-  opacity: 1;
-}
-
-.fillers__checkbox_chocolate:checked:disabled ~ .fillers__label_chocolate {
-  opacity: .4;
-  pointer-events: none;
-  cursor: default;
-}
-
 .fillers__checkbox_fruits:checked ~ .fillers__label_fruits::before {
   background-image: url("../img/decorative/checkbox-on.svg");
 }
@@ -1932,16 +1941,6 @@ html {
 }
 
 .fillers__checkbox_fruits:disabled ~ .fillers__label_fruits {
-  opacity: .4;
-  pointer-events: none;
-  cursor: default;
-}
-.fillers__checkbox_fruits:checked:disabled ~ .fillers__label_fruits::before {
-  background-image: url("../img/decorative/checkbox-on.svg");
-  opacity: 1;
-}
-
-.fillers__checkbox_fruits:checked:disabled ~ .fillers__label_fruits {
   opacity: .4;
   pointer-events: none;
   cursor: default;
@@ -1960,16 +1959,6 @@ html {
   pointer-events: none;
   cursor: default;
 }
-.fillers__checkbox_jam:checked:disabled ~ .fillers__label_jam::before {
-  background-image: url("../img/decorative/checkbox-on.svg");
-  opacity: 1;
-}
-
-.fillers__checkbox_jam:checked:disabled ~ .fillers__label_jam {
-  opacity: .4;
-  pointer-events: none;
-  cursor: default;
-}
 
 .fillers__checkbox_sugar:checked ~ .fillers__label_sugar::before {
   background-image: url("../img/decorative/checkbox-on.svg");
@@ -1984,16 +1973,6 @@ html {
   pointer-events: none;
   cursor: default;
 }
-.fillers__checkbox_sugar:checked:disabled ~ .fillers__label_sugar::before {
-  background-image: url("../img/decorative/checkbox-on.svg");
-  opacity: 1;
-}
-
-.fillers__checkbox_sugar:checked:disabled ~ .fillers__label_sugar {
-  opacity: .4;
-  pointer-events: none;
-  cursor: default;
-}
 
 .fillers__checkbox_syrup:checked ~ .fillers__label_syrup::before {
   background-image: url("../img/decorative/checkbox-on.svg");
@@ -2004,16 +1983,6 @@ html {
 }
 
 .fillers__checkbox_syrup:disabled ~ .fillers__label_syrup {
-  opacity: .4;
-  pointer-events: none;
-  cursor: default;
-}
-.fillers__checkbox_syrup:checked:disabled ~ .fillers__label_syrup::before {
-  background-image: url("../img/decorative/checkbox-on.svg");
-  opacity: 1;
-}
-
-.fillers__checkbox_syrup:checked:disabled ~ .fillers__label_syrup {
   opacity: .4;
   pointer-events: none;
   cursor: default;
