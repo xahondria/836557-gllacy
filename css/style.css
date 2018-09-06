@@ -3,7 +3,7 @@
   padding-bottom: 22px;
   min-width: 900px;
 
-  font-family: "Roboto", "Calibri", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -1483,7 +1483,7 @@ html {
 /*popup*/
 
 .popup-feedback-wrapper {
-  font-family: "Roboto", "Calibri", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 
   position: fixed;
   z-index: 100;
