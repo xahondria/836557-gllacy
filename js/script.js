@@ -4,7 +4,7 @@ var PopupFeedback = document.querySelector('.popup-feedback');
 var PopupFeedback__CloseButton = PopupFeedback.querySelector('.popup-feedback__close');
 var PopupFeedbackName = PopupFeedback.querySelector('.popup-feedback__input[name=name]');
 var PopupFeedbackEmail = PopupFeedback.querySelector('.popup-feedback__input[name=email]');
-var PopupFeedbackForm = PopupFeedback.querySelector('.PopupFeedbackForm');
+var PopupFeedbackForm = PopupFeedback.querySelector('.popup-feedback-form');
 var isStorageSupport = true;
 var storage = "";
 
