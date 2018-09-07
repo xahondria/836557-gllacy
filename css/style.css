@@ -1433,13 +1433,13 @@ html {
 
 .footer-menu {
   list-style: none;
-  width: 305px;
-  padding-bottom: 5px;
-  padding-left: 2px;
+  width: 330px;
+  padding-bottom: 7px;
+  margin-left: -14px;
 }
 
-.footer-menu__item {
-  min-width: 140px;
+.footer-menu__item:nth-child(2n-1) {
+  padding-left: 23px;
 }
 
 .footer-menu__button {
@@ -1463,8 +1463,8 @@ html {
 .footer-menu__button_bold::before {
   content: "";
   position: absolute;
-  left: -19px;
-  top: 3px;
+  left: -22px;
+  top: 2px;
 
   display: block;
   width: 15px;
@@ -1583,6 +1583,13 @@ html {
 }
 
 /*catalog page*/
+
+.catalog-background-gradient {
+  background-position: top;
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#9cb0a5, #849d8f);
+}
 
 .catalog-path {
   list-style: none;
