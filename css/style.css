@@ -257,7 +257,7 @@ html {
   }
 }
 
-.section__flex-separator {
+.section-flex-separator {
   width: 3%;
   min-width: 20px;
   max-width: 25px;
@@ -578,7 +578,7 @@ html {
   background-color: #f8f7f4;
 }
 
-.cart-label:hover .cart-wrapper {
+.cart-label:hover .cart {
   display: block;
 }
 
@@ -920,7 +920,7 @@ html {
   }
 }
 
-.catalog-ice-cream {
+.catalog-ice-cream_margin-bottom {
   margin-bottom: 67px;
 }
 
