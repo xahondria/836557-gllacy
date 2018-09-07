@@ -975,18 +975,18 @@ html {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
 }
 
-.catalog-ice-cream-item:hover .catalog-ice-cream-item__image {
+.catalog-ice-cream-item:hover .catalog-ice-cream-item__image-wrapper {
   z-index: 6;
 }
 
-.catalog-ice-cream-item__image {
+.catalog-ice-cream-item__image-wrapper {
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 
-.catalog-ice-cream-item__image a,
-.catalog-ice-cream-item__image img {
+.catalog-ice-cream-item__image-wrapper a,
+.catalog-ice-cream-item__image-wrapper .catalog-ice-cream-item__image {
   border-radius: 50%;
   max-width: 100%;
   height:auto;
@@ -998,7 +998,7 @@ html {
 .catalog-ice-cream__price {
   position: absolute;
   bottom: 7px;
-  left: 3px;
+  left: 1px;
 
   margin: 0;
 
@@ -1009,8 +1009,17 @@ html {
   text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
-.catalog-ice-cream__weight {
+.catalog-ice-cream__price_small {
   font-size: 30px;
+}
+
+.catalog-ice-cream__ruble {
+  width: 31px;
+  height: auto;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: -10px;
+  margin-left: -8px;
 }
 
 .catalog-ice-cream__title {
