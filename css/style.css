@@ -1500,8 +1500,6 @@ html {
 /*popup*/
 
 .popup-feedback-wrapper {
-  font-family: "Roboto", "Arial", sans-serif;
-
   position: fixed;
   z-index: 100;
   left: 0;
@@ -1512,6 +1510,8 @@ html {
 }
 
 .popup-feedback {
+  font-family: "Roboto", "Arial", sans-serif;
+
   position: fixed;
   z-index: 1000;
 
