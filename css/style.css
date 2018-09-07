@@ -906,36 +906,28 @@ html {
 
 .popular-items,
 .catalog-ice-cream {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 0;
   margin-top: -6px;
+  margin-bottom: -17px;
   max-width: 1171px;
 }
 
-@media screen and (min-width: 901px) {
-  .popular-items,
-  .catalog-ice-cream {
-    margin-left: 15px;
-    margin-right: 14px;
-  }
-}
-
 .catalog-ice-cream_margin-bottom {
-  margin-bottom: 67px;
-}
-
-.catalog-row {
-  margin-bottom: 17px;
+  margin-bottom: 50px;
 }
 
 .catalog-ice-cream-item {
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-top: 6px;
+  padding-left: 11px;
+  padding-right: 11px;
   min-width: 220px;
-  max-width: 291px;
-  margin-right: 2px;
+  max-width: 293px;
+  margin-bottom: 1.45%;
+}
+
+.catalog-ice-cream-item:nth-of-type(4n-3) {
+  margin-left: -12px;
 }
 
 .catalog-ice-cream-item_hit::after {
@@ -1670,7 +1662,11 @@ html {
 }
 
 .options-item {
-  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.options-item-wrapper {
+  margin-left: -15px;
 }
 
 .options-input {
@@ -2058,6 +2054,8 @@ html {
 
   width: 144px;
   margin-bottom: -6px;
+  margin-left: 14px;
+  margin-right: -2px;
 
   border: 2px solid white;
   border-radius: 18px;
