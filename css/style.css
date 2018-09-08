@@ -173,22 +173,19 @@ html {
 }
 
 .input {
-  line-height: 0;
   height: 44px;
 }
 
 .input:hover,
 .textarea:hover {
   border: 2px solid #d3d3d2;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 13px;
 }
 
 .input:focus,
 .textarea:focus {
   border: 2px solid rgba(46, 136, 228, .52);
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 13px;
 }
 
 .button {
@@ -511,6 +508,7 @@ html {
 
 .search__input {
   width: 311px;
+  font-size: 14px;
 }
 
 .login-wrapper {
@@ -564,10 +562,11 @@ html {
 .login__registration {
   font-size: 13px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 24px;
   color: #323232;
-
-  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  -moz-text-decoration:  underline rgba(50, 50, 50, .3);
+  -ms-text-decoration:  underline rgba(50, 50, 50, .3);
+  text-decoration:  underline rgba(50, 50, 50, .3);
 }
 
 .login__registration:hover {
