@@ -4,12 +4,15 @@ var PopupFeedback = document.querySelector('.popup-feedback');
 var PopupFeedback__CloseButton = PopupFeedback.querySelector('.popup-feedback__close');
 var PopupFeedbackName = PopupFeedback.querySelector('.popup-feedback__input[name=name]');
 var PopupFeedbackEmail = PopupFeedback.querySelector('.popup-feedback__input[name=email]');
+var PopupFeedbackText = PopupFeedback.querySelector('.popup-feedback__textarea');
 var PopupFeedbackForm = PopupFeedback.querySelector('.popup-feedback-form');
 var isStorageSupport = true;
-var storage = "";
+var StorageName = "";
+var StorageEmail = "";
 
 try {
-  storage = localStorage.getItem('PopupFeedbackName');
+  StorageName = localStorage.getItem('PopupFeedbackName');
+  StorageEmail = localStorage.getItem('PopupFeedbackEmail');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -20,9 +23,10 @@ FeedbackBlock__button.addEventListener('click', function (evt) {
   PopupFeedback.classList.remove('hidden');
   PopupFeedbackName.focus();
 
-  if (storage) {
-    PopupFeedbackName.value = storage;
-    PopupFeedbackEmail.focus();
+  if (StorageName) {
+    PopupFeedbackName.value = StorageName;
+    PopupFeedbackEmail.value = StorageEmail;
+    PopupFeedbackText.focus();
   } else {
     PopupFeedbackName.focus();
   }
@@ -32,12 +36,14 @@ PopupFeedback__CloseButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   PopupFeedbackWrapper.classList.add('hidden');
   PopupFeedback.classList.add('hidden');
+  PopupFeedback.classList.remove('modal-error')
 });
 
 PopupFeedbackWrapper.addEventListener('click', function (evt) {
   evt.preventDefault();
   PopupFeedbackWrapper.classList.add('hidden');
   PopupFeedback.classList.add('hidden');
+  PopupFeedback.classList.remove('modal-error')
 });
 
 window.addEventListener('keydown', function (evt) {
@@ -46,6 +52,7 @@ window.addEventListener('keydown', function (evt) {
     if (!PopupFeedback.classList.contains('hidden') && !PopupFeedbackWrapper.classList.contains('hidden')) {
       PopupFeedbackWrapper.classList.add('hidden');
       PopupFeedback.classList.add('hidden');
+      PopupFeedback.classList.remove('modal-error')
     }
   }
 });
@@ -53,10 +60,13 @@ window.addEventListener('keydown', function (evt) {
 PopupFeedbackForm.addEventListener('submit', function (evt) {
   if (!PopupFeedbackName.value || !PopupFeedbackEmail.value) {
     evt.preventDefault();
-    console.log('Нужно ввести логин и пароль');
+    PopupFeedback.classList.remove('modal-error');
+    PopupFeedback.offsetWidth = PopupFeedback.offsetWidth;
+    PopupFeedback.classList.add('modal-error');
   } else {
     if (isStorageSupport) {
       localStorage.setItem('PopupFeedbackName', PopupFeedbackName.value);
+      localStorage.setItem('PopupFeedbackEmail', PopupFeedbackEmail.value);
     }
   }
 });
