@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>Глейси</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -63,7 +63,7 @@
                       <label aria-label="Пароль">
                         <input class="input login__input" type="password" placeholder="Пароль" name="password" required>
                       </label>
-                      <div class="flex flex_between flex_items-center">
+                      <div class="button-wrapper flex flex_between">
                         <button class="button login__button" type="submit">Войти</button>
                         <div class="registration">
                           <a class="login__registration" href="#">Забыли пароль?</a>
@@ -110,22 +110,29 @@
               <p class="promo-item__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="button promo-item__button" href="#">Хочу варенье!</a>
             </div>
-            <div class="section__flex-separator flex__1"></div>
+            <div class="section-flex-separator flex__1"></div>
             <div class="promo-item promo-item__chocolate flex__1">
               <h2 class="promo-item__title">Шоколадки даром!</h2>
               <p class="promo-item__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
               <a class="button promo-item__button" href="#">Хочу шоколадки!</a>
             </div>
           </section>
-          <section class="popular-items flex flex_start">
+          <section class="section-wrapper popular-items catalog-ice-cream flex flex_start flex_wrap">
             <h2 class="visually-hidden">Популярные товары</h2>
             <div class="catalog-ice-cream-item catalog-ice-cream-item_hit flex__w25">
-              <div class="catalog-ice-cream-item__image">
-                <a href="#"><img src="img/content/ice-cream-citrus.jpg"
+              <div class="catalog-ice-cream-item__image-wrapper">
+                <a href="#"><img class="catalog-ice-cream-item__image"
+                                 src="img/content/ice-cream-citrus.jpg"
                                  alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"
                                  width="267"
                                  height="267"></a>
-                <p class="catalog-ice-cream__price">310&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+                <p class="catalog-ice-cream__price">310
+                  <img class="catalog-ice-cream__ruble"
+                       src="img/decorative/ruble-with-shadow.svg"
+                       alt="&#x20bd;"
+                       width="30"
+                       height="35">
+                  <span class="catalog-ice-cream__price_small">/кг</span></p>
               </div>
               <h3 class="catalog-ice-cream__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
               <div class="catalog-ice-cream__button-wrapper hidden">
@@ -133,12 +140,19 @@
               </div>
             </div>
             <div class="catalog-ice-cream-item catalog-ice-cream-item_hit flex__w25">
-              <div class="catalog-ice-cream-item__image">
-                <a href="#"><img src="img/content/ice-cream-chocolate.jpg"
+              <div class="catalog-ice-cream-item__image-wrapper">
+                <a href="#"><img class="catalog-ice-cream-item__image"
+                                 src="img/content/ice-cream-chocolate.jpg"
                                  alt="Сливочно-кофейное мороженое с кусочками шоколада"
                                  width="267"
                                  height="267"></a>
-                <p class="catalog-ice-cream__price">380&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+                <p class="catalog-ice-cream__price">380
+                  <img class="catalog-ice-cream__ruble"
+                       src="img/decorative/ruble-with-shadow.svg"
+                       alt="&#x20bd;"
+                       width="30"
+                       height="35">
+                  <span class="catalog-ice-cream__price_small">/кг</span></p>
               </div>
               <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
               <div class="catalog-ice-cream__button-wrapper hidden">
@@ -146,12 +160,19 @@
               </div>
             </div>
             <div class="catalog-ice-cream-item catalog-ice-cream-item_hit flex__w25">
-              <div class="catalog-ice-cream-item__image">
-                <a href="#"><img src="img/content/ice-cream-strawberry.jpg"
+              <div class="catalog-ice-cream-item__image-wrapper">
+                <a href="#"><img class="catalog-ice-cream-item__image"
+                                 src="img/content/ice-cream-strawberry.jpg"
                                  alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"
                                  width="267"
                                  height="267"></a>
-                <p class="catalog-ice-cream__price">355&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+                <p class="catalog-ice-cream__price">355
+                  <img class="catalog-ice-cream__ruble"
+                       src="img/decorative/ruble-with-shadow.svg"
+                       alt="&#x20bd;"
+                       width="30"
+                       height="35">
+                  <span class="catalog-ice-cream__price_small">/кг</span></p>
               </div>
               <h3 class="catalog-ice-cream__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
               <div class="catalog-ice-cream__button-wrapper hidden">
@@ -159,12 +180,19 @@
               </div>
             </div>
             <div class="catalog-ice-cream-item catalog-ice-cream-item_hit flex__w25">
-              <div class="catalog-ice-cream-item__image">
-                <a href="#"><img src="img/content/ice-cream-creme-brulee.jpg"
+              <div class="catalog-ice-cream-item__image-wrapper">
+                <a href="#"><img class="catalog-ice-cream-item__image"
+                                 src="img/content/ice-cream-creme-brulee.jpg"
                                  alt="Сливочное мороженое крем-брюле с карамельной подливкой"
                                  width="267"
                                  height="267"></a>
-                <p class="catalog-ice-cream__price">415&#x20bd;<span class="catalog-ice-cream__weight">/кг</span></p>
+                <p class="catalog-ice-cream__price">415
+                  <img class="catalog-ice-cream__ruble"
+                       src="img/decorative/ruble-with-shadow.svg"
+                       alt="&#x20bd;"
+                       width="30"
+                       height="35">
+                  <span class="catalog-ice-cream__price_small">/кг</span></p>
               </div>
               <h3 class="catalog-ice-cream__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
               <div class="catalog-ice-cream__button-wrapper hidden">
@@ -179,7 +207,7 @@
                 Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
               </li>
               <li class="our-advantages-list__item our-advantages-list__item_cow flex__w50">
-                Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                <span>Закупка ингредиентов  производится только у проверенных</span> фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
               </li>
               <li class="our-advantages-list__item our-advantages-list__item_leaf flex__w50">
                 Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
@@ -196,7 +224,7 @@
                 <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
               </p>
             </section>
-            <div class="section__flex-separator flex__1"></div>
+            <div class="section-flex-separator flex__1"></div>
             <div class="subscribe-block-wrapper flex__1">
               <form class="subscribe-block position-relative" action="https://echo.htmlacademy.ru" method="post">
                 <p class="subscribe-block__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -219,10 +247,10 @@
               <h2 class="feedback-block__heading">Для заказов по телефону:</h2>
               <strong class="feedback-block__phone">8 812 450-25-25</strong>
               <p class="feedback-block__schedule">(с 10 до 20 ежедневно)</p>
-              <button class="button feedback-block__button"
-                      type="button">
+              <a class="button feedback-block__button"
+                 href="popup-feedback.html">
                 Форма обратной связи
-              </button>
+              </a>
             </div>
           </section>
         </main>
@@ -234,16 +262,16 @@
             <li class="social__item" title="Вконтакте"><a class="social__button social__button_vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
           </ul>
           <div class="footer-menu flex flex_wrap">
-            <div class="footer-menu__item">
+            <div class="footer-menu__item flex__w50">
               <a class="footer-menu__button footer-menu__button_bold" href="#">Для поставщиков</a>
             </div>
-            <div class="footer-menu__item">
+            <div class="footer-menu__item flex__w50">
               <a class="footer-menu__button" href="#">Наши документы</a>
             </div>
-            <div class="footer-menu__item">
+            <div class="footer-menu__item flex__w50">
                 <a class="footer-menu__button" href="#">О производстве</a>
             </div>
-            <div class="footer-menu__item">
+            <div class="footer-menu__item flex__w50">
                   <a class="footer-menu__button" href="#">Экологические стандарты</a>
             </div>
           </div>
@@ -262,12 +290,12 @@
         <button class="popup-feedback__close"
                 type="button"
                 aria-label="Закрыть форму обратной связи"></button>
-        <form class="PopupFeedbackForm" action="https://echo.htmlacademy.ru" method="post">
+        <form class="popup-feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <label aria-label="Как вас зовут?">
-            <input class="input popup-feedback__input" type="text" placeholder="Как вас зовут?" name="name" required>
+            <input class="input popup-feedback__input" type="text" placeholder="Как вас зовут?" name="name">
           </label>
           <label aria-label="Ваша почта для ответа?">
-            <input class="input popup-feedback__input" type="email" placeholder="Ваша почта для ответа?" name="email" required>
+            <input class="input popup-feedback__input" type="email" placeholder="Ваша почта для ответа?" name="email">
           </label>
           <label aria-label="Напишите что-нибудь...">
             <textarea class="textarea popup-feedback__textarea" placeholder="Напишите что-нибудь..." name="feedback-text"></textarea>
